@@ -1,0 +1,239 @@
+body {
+  background: url(./image/Ekran\ Resmi\ 2023-12-14\ 23.36.39.png);
+}
+
+.icons {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(224, 213, 213);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.header .navbar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.header .navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.57px;
+}
+.header .navbar a:hover {
+  color: pink;
+}
+.header .icons a {
+  text-decoration: none;
+  color: black;
+}
+.header .icons a:hover {
+  color: pink;
+}
+
+.header-text-1 h2 {
+  margin-bottom: 15px;
+  font-size: 45px;
+}
+.header-text-1 p {
+  margin-bottom: 15px;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.57px;
+}
+
+.section-text-video {
+  padding-top: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+.all-but {
+  width: 167px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #543EE9;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+
+.section-2 {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  header .navbar {
+    display: none !important;
+  }
+  header .col-lg-2 {
+    display: none;
+  }
+  header .icons {
+    display: none !important;
+  }
+  header .icons-3 {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  header .icons-3 {
+    display: none !important;
+  }
+}
+.cards-head {
+  margin-bottom: 30px;
+}
+.cards-head p {
+  color: black;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.cards-head h3 {
+  text-align: center;
+  color: black;
+  font-family: Futurica;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.card-icons i {
+  color: #543EE9;
+}
+
+.card-butn {
+  background-color: #fff;
+  margin-right: 13px;
+  width: 120px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid #353535;
+}
+
+.container .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 320px;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.9s;
+}
+
+.container .card:hover {
+  height: 350px;
+}
+
+.container .card .imgBx {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 220px;
+  background-color: #333;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.container .card:hover .imgBx {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.container .card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .card .content {
+  position: absolute;
+  top: 235px;
+  width: 100%;
+  padding: 3px 7px;
+  overflow: hidden;
+  height: 30px;
+  transition: 0.9s;
+}
+
+.container .card:hover .content {
+  top: 120px;
+  height: 250px;
+}
+
+.container .card .content h2 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.container .card .content p {
+  color: #333;
+}
+
+.container .card .content a {
+  position: relative;
+  top: -9px;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: aqua;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.container .card .content span {
+  color: #671C7C;
+}
+
+.teacher .teach-img {
+  margin-left: 40px;
+}
+.teacher .teach-img img {
+  width: 100%;
+}
+.teacher .teach-head {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 992px) {
+  .teacher .teach-img {
+    margin-left: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */
