@@ -1,6 +1,6 @@
-body{
+.container{
     
-    background: url(./image/Ekran\ Resmi\ 2023-12-14\ 23.36.39.png);
+    background: url(./image/Ekran\ Resmi\ 2023-12-14\ 23.36.39.png) !important;
 }
 
 .icons{
@@ -574,124 +574,45 @@ line-height: 24px;
     width: 100% !important;
   }
 }
+.student-text{
+  background-color: white;
+  height: 245px;
+  padding: 25px;
+  overflow: hidden;
+  transition: 0.6s;
+  & img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+   
+  }
+  & span{
+    color: #FE5538;
 
-// ...............
-.cardTwo {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  transition-delay: 0.5s;
-}
-.cardTwo:hover {
-  width: 400px;
-  transition-delay: 0.5s;
-}
-.cardTwo .circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cardTwo .circle::before {
-  content: "";
-  position: absolute;
-  top: 30;
-  left: 2;
-  right: 2;
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  background: #4b4949;
-  border: 8px solid rebeccapurple;
-  filter: drop-shadow(0 0 5px #671C7C) drop-shadow(0 0 20px #671C7C);
-  transition: 0.5s, background 0.5s;
-  transition-delay: 0.75s, 1s;
-}
-//ARXA FONUN UZUNNUĞU
-.cardTwo:hover .circle::before {
-  transition-delay: 0.5s;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  background: #671C7C;
-}
-.cardTwo .circle .logo1 {
-  border-radius: 50%;
-  position: relative;
-  width: 96%;
-  height: 96%;
-  // width: 250px;
-  transition: 0.5s;
-  transition-delay: 0.5s;
-}
-.cardTwo:hover .circle .logo1 {
-  transform: scale(0);
-  transition-delay: 0s;
-}
-.cardTwo .product_img {
-  object-fit: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0) rotate(315deg);
-  height: 100px;
-  transition: 0.5s ease-in-out;
-}
-.cardTwo:hover .product_img {
-  transition-delay: 0.75s;
-  top: 25%;
-  left: 72%;
-  height: 150px;
-  width: 150px;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
-}
-.cardTwo .content {
-  position: absolute;
-  width: 50%;
-  left: 20%;
-  padding: 20px 20px 20px 20px;
-  opacity: 0;
-  transition: 0.5s;
-  visibility: hidden;
-}
-.cardTwo:hover .content {
-  transition-delay: 0.75s;
-  opacity: 1;
-  visibility: visible;
-  left: 20px;
-}
-.cardTwo .content h2 {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 2.5em;
-  line-height: 1em;
-}
-.cardTwo .content p {
-  color: #fff;
-}
-.cardTwo .content a {
-  position: relative;
-  color: #111;
-  background: #fff;
-  padding: 10px 20px;
-  border-radius: 10px;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 10px;
-}
+font-family: Mulish;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px;
+  }
+  & p{
+    color: #3E3D3D;
 
-.telebe-text{
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+font-family: Mulish;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+  }
+}
+.student-text:hover{
+  height: 100%;
+
+}
+.stu-icon{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+  
 }
