@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
     <link rel="stylesheet" href="./style.css" />
     <!-- <link rel="stylesheet" href="./layout.css" /> -->
     <link rel="stylesheet" href="./reset.css" />
@@ -544,8 +548,211 @@
             </div>
           </div>
         </section>
+        <!-- .....SLİDER...... -->
+        <section class="slid">
+
+    <div class="slider-container swiper">
+      <div class="slider-content">
+        <div class="cardOne-wrapper swiper-wrapper">
+          <div class="cardOne swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="cardOne-image">
+                <img
+                  src="./image/slider-teacher-1.webp"
+                  alt=""
+                  class="cardOne-img"
+                />
+              </div>
+            </div>
+
+            <div class="cardOne-content">
+              <h2 class="name">Nijat</h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+                architecto fugiat omnis tempore illum doloremque, deserunt alias
+                mollitia voluptatum nisi quidem cupiditate, aspernatur maxime
+                fuga quisquam repellat minima. Autem, mollitia?
+              </p>
+
+              <button class="buttonOne">view More</button>
+            </div>
+          </div>
+          <div class="cardOne swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="cardOne-image">
+                <img
+                  src="./image/slider-teacher-2.webp"
+                  alt=""
+                  class="cardOne-img"
+                />
+              </div>
+            </div>
+
+            <div class="cardOne-content">
+              <h2 class="name">Nijat</h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+                architecto fugiat omnis tempore illum doloremque, deserunt alias
+                mollitia voluptatum nisi quidem cupiditate, aspernatur maxime
+                fuga quisquam repellat minima. Autem, mollitia?
+              </p>
+
+              <button class="buttonOne">view More</button>
+            </div>
+          </div>
+          <div class="cardOne swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="cardOne-image">
+                <img
+                  src="./image/slider-teacher-3.jpeg"
+                  alt=""
+                  class="cardOne-img"
+                />
+              </div>
+            </div>
+
+            <div class="cardOne-content">
+              <h2 class="name">Nijat</h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+                architecto fugiat omnis tempore illum doloremque, deserunt alias
+                mollitia voluptatum nisi quidem cupiditate, aspernatur maxime
+                fuga quisquam repellat minima. Autem, mollitia?
+              </p>
+
+              <button class="buttonOne">view More</button>
+            </div>
+          </div>
+          <div class="cardOne swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="cardOne-image">
+                <img
+                  src="./image/slider-teacher-4.webp"
+                  alt=""
+                  class="cardOne-img"
+                />
+              </div>
+            </div>
+
+            <div class="cardOne-content">
+              <h2 class="name">Nijat</h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+                architecto fugiat omnis tempore illum doloremque, deserunt alias
+                mollitia voluptatum nisi quidem cupiditate, aspernatur maxime
+                fuga quisquam repellat minima. Autem, mollitia?
+              </p>
+
+              <button class="buttonOne">view More</button>
+            </div>
+          </div>
+          <div class="cardOne swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="cardOne-image">
+                <img
+                  src="./image/slider-teacher-5.webp"
+                  alt=""
+                  class="cardOne-img"
+                />
+              </div>
+            </div>
+
+            <div class="cardOne-content">
+              <h2 class="name">Nijat</h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+                architecto fugiat omnis tempore illum doloremque, deserunt alias
+                mollitia voluptatum nisi quidem cupiditate, aspernatur maxime
+                fuga quisquam repellat minima. Autem, mollitia?
+              </p>
+
+              <button class="buttonOne">view More</button>
+            </div>
+          </div>
+          <div class="cardOne swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="cardOne-image">
+                <img
+                  src="./image/slider-teacher-6.jpeg"
+                  alt=""
+                  class="cardOne-img"
+                />
+              </div>
+            </div>
+
+            <div class="cardOne-content">
+              <h2 class="name">Nijat</h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+                architecto fugiat omnis tempore illum doloremque, deserunt alias
+                mollitia voluptatum nisi quidem cupiditate, aspernatur maxime
+                fuga quisquam repellat minima. Autem, mollitia?
+              </p>
+
+              <button class="buttonOne">view More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+        </section>
+
       </div>
     </main>
   
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+      var swiper = new Swiper(".slider-content", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        // loopFillGroupWithBlank: true,
+        centerSlide: 'true',
+        fade: 'true',
+        grapCursor: 'true',
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          950: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
