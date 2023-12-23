@@ -34,12 +34,11 @@
           <a href=""><img src="./image/image 7.png" alt="" class="logo" /></a>
           <nav class="navbar">
             <a href="#">Haqqımızda</a>
-            <a href="#">Kurslar</a>
-            <a href="#">İmtahanlar</a>
-            <a href="#">Müellim</a>
-            <a href="#">Mezunlar</a>
-            <a href="#">Kitablar</a>
-            <a href="#">Sertfikatlar</a>
+            <a href="#kurslar">Kurslar</a>
+            <a href="#imtahanlar">İmtahanlar</a>
+            <a href="#müellimler">Müellimler</a>
+            <a href="#mezunlar">Mezunlar</a>
+            <a href="#sertfikatlar">Sertfikatlar</a>
             <a href="#">Xeberler</a>
             <a href="#">Elaqe</a>
           </nav>
@@ -131,7 +130,7 @@
         </section>
         <br />
         <br />
-        <section class="cards">
+        <section class="cards" id="kurslar">
           <div class="row">
             <div class="col-lg-12 mb-5">
               <div class="cards-head">
@@ -422,7 +421,7 @@
             </div>
           </div>
         </section>
-        <section class="teacher">
+        <section class="teacher" id="">
           <div class="row g-5">
             <div class="col-lg-6 col-md-12">
               <div class="teach-head">
@@ -444,7 +443,15 @@
             
           </div>
         </section>
-        <section class="online-lessons">
+        <section class="online-lessons" id="imtahanlar">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="slider-head">
+                <h3>İmtahanlar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quaerat vel at blanditiis sequi id quisquam <br>repudiandae nemo suscipit quam fugit odio, expedita provident reiciendis velit ea? Saepe, officiis illum?</p>
+              </div>
+            </div>
+          </div>
           <div class="row g-5">
             <div class="col-lg-3 col-md-6">
               <div class="turn-card">
@@ -548,16 +555,17 @@
             </div>
           </div>
         </section>
-        <div class="row g-5 justify-content-center">
-          <div class="col-lg-12">
-            <div class="teacher-head">
-              <h2>Müellimler</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+       
+        <!-- .....SLİDER...... -->
+        <section class="slid" id="müellimler">
+          <div class="row g-5 justify-content-center">
+            <div class="col-lg-12">
+              <div class="teacher-head">
+                <h2>Müellimler</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- .....SLİDER...... -->
-        <section class="slid">
 
     <div class="slider-container swiper">
       <div class="slider-content">
@@ -723,11 +731,11 @@
 
         </section>
         
-        <section class="information">
+        <section class="information" style="background: #E2EAF8;">
           <div class="row g-5">
             <div class="col-lg-7 col-md-6">
-              <div class="video">
-                <iframe height="400px" src="https://www.youtube.com/embed/X3-KCt8Vpvk?si=KjyMNkRmuJTwSNwH"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="object-fit: cover;"></iframe>
+              <div class="info-foto">
+                <img src="./image/image 11.png" alt="">
               </div>
             </div>
             <div class="col-lg-5 col-md-6 mt-5">
@@ -742,12 +750,12 @@
         </section>
 
 
-        <section class="student">
+        <section class="student" id="mezunlar">
           <div class="row">
             <div class="col-lg-12">
 
               <div class="student-head">
-                <h2>Tələbələr</h2>
+                <h2>Məzun Tələbələrimiz</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quia maiores magnam libero magni laudantium alias iste quae.</p>
               </div>
             
@@ -760,9 +768,13 @@
                 <img src="./image/student-1.webp" alt="">
                 <span>Riyaziyyat</span>
                 <h4>Jane Cooper</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis?</p>
+                <div class="none-p">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis?</p>
+                </div>
                 <div class="stu-icon">
-                  <i class="fa-solid fa-circle-arrow-right"></i>
+                  <!-- <i class="fa-solid fa-circle-arrow-right"></i>
+                   -->
+                   <p>676 bal</p>
                 </div>
               </div>
               
@@ -770,38 +782,144 @@
             <div class="col-lg-3 col-md-6">
               <div class="student-text">
                 <img src="./image/student-2.avif" alt="">
-                <span>Riyaziyyat</span>
+                <span>Azərbaycan Dövlət Neft və Sənaye Universiteti</span>
                 <h4>Courtney Henry</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis?</p>
+                <p>Lorem Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis?</p>
                 <div class="stu-icon">
-                  <i class="fa-solid fa-circle-arrow-right"></i>
+                  <!-- <i class="fa-solid fa-circle-arrow-right"></i> -->
+                  <p>676 bal</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="student-text">
                 <img src="./image/student-3.avif" alt="">
-                <span>Riyaziyyat</span>
+                <span>Azərbaycan Memarlıq və İnşaat Universiteti</span>
                 <h4>Ronald Richards</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis?</p>
+                <p>Lorem ipsum Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis?</p>
                 <div class="stu-icon">
-                  <i class="fa-solid fa-circle-arrow-right"></i>
+                  <!-- <i class="fa-solid fa-circle-arrow-right"></i> -->
+                  <p>676 bal</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="student-text">
                 <img src="./image/student-4.avif" alt="">
-                <span>Riyaziyyat</span>
+                <span>Bakı Dövlət Universiteti</span>
                 <h4>Brooklyn Simmons</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis Commodi quam non ex sit iste facere pariatur quis magni. Vero, explicabo reiciendis? Omnis blanditiis?</p>
                 <div class="stu-icon">
-                  <i class="fa-solid fa-circle-arrow-right"></i>
+                  <!-- <i class="fa-solid fa-circle-arrow-right"></i> -->
+                  <p>676 bal</p>
+
                 </div>
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="card-main-butn d-flex justify-content-center mt-5">
+              <button class="card-butn">Ətraflı</button>
+            </div>
+          </div>
         </section>
+
+        <section class="information" style="background: #E2EAF8;">
+          <div class="row g-5">
+          
+            <div class="col-lg-5 col-md-6">
+              <div class="info-text">
+                <span>Faydalı məlumatlar</span>
+                <h2>RBA bilik Akademiyası</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-md-6">
+              <div class="info-foto">
+                <img src="./image/info-foto.png" alt="">
+              </div>
+            </div>
+            
+          </div>
+        </section>
+
+
+        <section class="slid" id="sertfikatlar">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="slider-head">
+                <h3>Sertifikatlar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quaerat vel at blanditiis sequi id quisquam <br>repudiandae nemo suscipit quam fugit odio, expedita provident reiciendis velit ea? Saepe, officiis illum?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-container swiper">
+            <div class="slider-content">
+              <div class="cardOne-wrapper swiper-wrapper">
+                <div class="cardOne swiper-slide">
+                  <div class="image-content2">
+                    
+                    <img src="./image/ssssss.jpg" alt="">
+                  </div>
+      
+                </div>
+                <div class="cardOne swiper-slide">
+                  <div class="image-content2">
+                    <img src="./image/sertfikat-2.png" alt="">
+                  
+                  </div>
+      
+                
+                </div>
+                <div class="cardOne swiper-slide">
+                  <div class="image-content2">
+                    <img src="./image/sertfikat-3.png" alt="">
+                    
+                  </div>
+      
+                </div>
+                <div class="cardOne swiper-slide">
+                  <div class="image-content2">
+                    <img src="./image/sertfikat-4.png" alt="">
+                    
+                  </div>
+      
+                </div>
+                <div class="cardOne swiper-slide">
+                  <div class="image-content2">
+                    <img src="./image/sertfikat-5.png" alt="">
+                    
+                  </div>
+      
+                  
+                </div>
+                <div class="cardOne swiper-slide">
+                  <div class="image-content2">
+                    <img src="./image/sertfikat-3.png" alt="">
+                    
+                  </div>
+      
+                </div>
+               
+               
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="card-main-butn d-flex justify-content-center mt-5">
+            <button class="card-butn">Hamısı</button>
+          </div>
+        
+      
+          </section>
+
+
+
 
       </div>
     </main>

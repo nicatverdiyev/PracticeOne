@@ -1,5 +1,40 @@
-// @media screen and (max-width:992px) {
-//     .navbar{
-//         display: none !important;
-//     }
-// }
+@media screen and (max-width:992px) {
+    
+    header{
+        .navbar{
+            display: none !important;
+        }
+       
+        .col-lg-2{
+            display: none;
+        }
+        .icons{
+            display: none !important;
+        }
+        .icons-3{
+            display: block;
+        }
+    }
+    
+   
+}
+
+
+@media screen and (min-width:992px){
+    header{
+        .icons-3{
+            display: none !important;
+        }
+    }
+}
+
+
+
+  @media screen and (max-width: 768px) {
+    .info-text {
+      margin-top: 10px !important;
+    }
+    iframe{
+      width: 100% !important;
+    }
+  }
