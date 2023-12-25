@@ -68,61 +68,65 @@
     } 
 }
 .header-text-1{
+
+    //  & span{
+    //    font-size: calc($--px-1 - $--px-2);
+    //  }
     // padding-right: 110px;
     & h2{
-        margin-bottom: 15px;
-        font-size: 45px;
+        margin-bottom: calc($--px-15);
+        font-size: $--px-45;
     } 
     & p{
-        margin-bottom: 15px;
+        margin-bottom: $--px-15;
         color: $--main-color;
         font: {
-          size: 14px;
+        size: calc($--px-15 - $--px-1);
         weight: 700;
         }
-        line-height: 17.57px;
+        line-height: calc($--px-20 - $--px-2);
         
     }
 }
 .section-text-video{
-    padding-top: 100px;
+    padding-top: $--px-100;
     background-size: cover;
     background-position: center;
 }
 
 .all-but{
-width: 167px;
-height: 50px;
+width: calc($--px-100 + $--px-65 + $--px-2);
+height: $--px-50;
 flex-shrink: 0;
-border-radius: 30px;
+border-radius: $--px-30;
 background: #543EE9;
 border: none;
 color: $--main-two-color;
-margin-top: 20px;
+margin-top: $--px-20;
 }
 .section-2{
-    margin-top: 100px;
+    margin-top: $--px-100;
 }
 
 .cards-head{
-    margin-bottom: 30px ;
+    margin-bottom: $--px-30 ;
     & p{
       color: $--main-color;
       text-align: center;
         font: {
         family: Mulish;
-        size: 16px;
+        size: calc($--px-15 + $--px-1);
         style: normal;
         weight: 400;
       }
-      line-height: 24px
+      line-height: calc($--px-25 - $--px-1);
     }
     & h3{
         text-align: center;
         color: $--main-color;
           font: {
             family: Futurica;
-            size: 30px;
+            size: $--px-30;
             style: normal;
             weight: 700;
                 }
@@ -138,10 +142,10 @@ margin-top: 20px;
 }
 .card-butn{
     background-color: $--main-two-color;
-    margin-right: 13px;
-    width: 120px;
-    height: 40px;
-    border-radius: 30px;
+    margin-right: calc($--px-10 + $--px-3);
+    width: calc($--px-100 + $--px-20);
+    height: $--px-40;
+    border-radius: $--px-30;
 border: 1px solid $--card-btn-color;
 }
 // ......cads........
@@ -151,20 +155,20 @@ border: 1px solid $--card-btn-color;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: 320px;
+    height: calc(($--px-100 * 3) + $--px-20);
     background-color: $--main-two-color;
-    border-radius: 20px;
+    border-radius: $--px-20;
     // box-shadow: 0 35px 80px rgba(0, 0, 0, 15);
     transition: 0.9s;
   }
   .container .card:hover {
-    height: 350px;
+    height: calc(($--px-100 * 3) + $--px-50);
   }
   .container .card .imgBx {
     position: absolute;
-    top: 0px;
+    top: $--px-0;
     width: 100%;
-    height: 220px;
+    height: calc(($--px-100 * 2) + $--px-20);
     background-color: $--shadow-color;
     // border-radius: 12px;
     overflow: hidden;
@@ -174,7 +178,7 @@ border: 1px solid $--card-btn-color;
     top: -100px;
     scale: 0.75;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 15);
-    border-radius: 20px;
+    border-radius: $--px-20;
   }
   .container .card .imgBx img {
     position: absolute;
@@ -186,21 +190,21 @@ border: 1px solid $--card-btn-color;
   }
   .container .card .content {
     position: absolute;
-    top: 235px;
+    top: calc(($--px-100 * 2) + $--px-35);
     width: 100%;
     padding: 3px 7px;
     overflow: hidden;
-    height: 30px;
+    height: $--px-30;
     // text-align: center;
     transition: 0.9s;
   }
   .container .card:hover .content {
-    top: 120px;
-    height: 250px;
+    top: calc($--px-100 + $--px-20);
+    height: calc(($--px-100 * 2) + $--px-50);
   }
   .container .card .content h2 {
    font: {
-      size: 15px;
+      size: $--px-15;
       weight: 700;
    }
   }
@@ -216,20 +220,20 @@ border: 1px solid $--card-btn-color;
     color: $--main-two-color;
     font-weight: 500;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: $--px-8;
   }
   .container .card .content span{
     color: $--rebe-color;
   }
 .teacher{
     & .teach-img{
-        margin-left: 40px;
+        margin-left: $--px-40;
         & img{
             width: 100%;
         }
     }
     & .teach-head{
-        margin-top: 70px;
+        margin-top: $--px-70;
     }
   }
 
@@ -237,18 +241,18 @@ border: 1px solid $--card-btn-color;
   @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=M+PLUS+Rounded+1c&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 .online-lessons{
-    margin-top: 20px;
+    margin-top: $--px-20;
 }
   .turn-card {
   position: relative;
-  height: 310px;
+  height: calc(($--px-100 * 3) + $--px-10);
 }
 .forn img{
     object-fit: cover;
 }
 
 .front .ttt {
-  padding-left: 20px;
+  padding-left: $--px-20;
 //   padding-bottom: 20px;
   width: 100%;
   height: 100%;
@@ -261,11 +265,11 @@ border: 1px solid $--card-btn-color;
   color: $--ttt-color;
       font: {
         family: Gotham Rounded;
-        size: 35px;
+        size: $--px-35;
         style: normal;
         weight: 400;
       }
-  line-height: 50px;
+  line-height: $--px-50;
   margin-bottom: 0px !important;
 }
 .front .ttt span {
@@ -273,11 +277,11 @@ border: 1px solid $--card-btn-color;
   color: $--main-two-color;
         font: {
           family: Mulish;
-          size: 20px;
+          size: $--px-20;
           style: normal;
           weight: 700;
         }
-  line-height: 20px;
+  line-height: $--px-20;
 }
 .box {
   position: absolute;
@@ -285,7 +289,7 @@ border: 1px solid $--card-btn-color;
   right: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: $--px-10;
   overflow: hidden;
   transition: 1s;
 }
@@ -329,14 +333,14 @@ img {
   color: $--ttt-color;
   font-family: "M PLUS Rounded 1c", sans-serif;
         font: {
-          size: 35px;
-          tyle: normal;
+          size: $--px-35;
+          style: normal;
           weight: 700;
         }
-  line-height: 50px;
+  line-height: $--px-50;
 }
 .back-text p {
-  padding-bottom: 10px;
+  padding-bottom: $--px-10;
 }
 .turn-card:hover .front {
   transform: rotateY(180deg);
@@ -354,7 +358,7 @@ img {
 }
 // ....SLİDER.....
 .teacher-head{
-  margin-top: 40px;
+  margin-top: $--px-40;
   text-align: center;
   & p{
     margin-bottom: 0 !important;
@@ -369,7 +373,7 @@ img {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: calc($--px-10 + $--px-8);
   background: $--main-two-color;
   display: flex;
   justify-content: center;
@@ -379,7 +383,7 @@ img {
 .swiper-slide img {
   display: block;
   // width: 100%;
-  width: 200px;
+  width: calc($--px-100 * 2);
   height: 100%;
   object-fit: cover;
 }
@@ -392,7 +396,7 @@ img {
 
 .append-buttons {
   text-align: center;
-  margin-top: 20px;
+  margin-top: $--px-20;
 }
 
 .append-buttons button {
@@ -402,9 +406,9 @@ img {
   color: $--butn-color;
   text-decoration: none;
   padding: 4px 10px;
-  border-radius: 4px;
+  border-radius: $--px-4;
   margin: 0 10px;
-  font-size: 13px;
+  font-size: calc($--px-10 + $--px-3);
 }
 .slider-box{
   width: 100%;
@@ -414,7 +418,7 @@ img {
 }
 .slider-head{
   text-align: center;
-  margin-top: 20px;
+  margin-top: $--px-20;
 }
 // ...............
 
@@ -422,14 +426,14 @@ img {
   // max-width: 1120px;
   // width: 100%;
   // background-color: grey;
-  padding: 40px;
+  padding: $--px-40;
 }
 .slider-content {
   margin: 0 40px;
 }
 .cardOne {
-  width: 300px;
-  border-radius: 25px;
+  width: calc($--px-100 * 3);
+  border-radius: $--px-25;
   background-color: $--main-two-color;
 }
 .image-content,
@@ -442,7 +446,7 @@ img {
 .image-content {
   // height: 350px;
   position: relative;
-  row-gap: 5px;
+  row-gap: $--px-5;
   padding: 25px 0;
 }
 .image-content2{
@@ -450,12 +454,12 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 10px 14px;
-  height: 350px;
+  height: calc(($--px-100 * 3) + $--px-50);
   position: relative;
-  row-gap: 5px;
+  row-gap: $--px-5;
   padding: 25px 0;
   background-color: $--main-two-color;
-  border-radius: 20px;
+  border-radius: $--px-20;
 }
 .overlay {
   position: absolute;
@@ -472,8 +476,8 @@ img {
   position: absolute;
   right: 0;
   bottom: -40px;
-  height: 40px;
-  width: 40px;
+  height: $--px-40;
+  width: $--px-40;
   background-color: $--rebe-color;
 }
 .overlay::after {
@@ -482,11 +486,11 @@ img {
 }
 .cardOne-image {
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: calc($--px-100 + $--px-50);
+  width: calc($--px-100 + $--px-50);
   border-radius: 50%;
   background-color: $--main-two-color;
-  padding: 3px;
+  padding: $--px-3;
 }
 .cardOne-image .cardOne-img {
   width: 100%;
@@ -496,22 +500,22 @@ img {
   border: 4px solid $--rebe-color;
 }
 .name {
-  font-size: 18px;
+  font-size: calc($--px-10 + $--px-8);
   color: $--shadow-color;
 }
 .description {
-  font-size: 14px;
+  font-size: calc($--px-10 + $--px-4);
   text-align: center;
   color: $--desc-color;
 }
 .buttonOne {
   border: none;
-  font-size: 16px;
+  font-size: calc($--px-10 + $--px-6);
   color: $--main-two-color;
   padding: 8px 16px;
   background-color: $--butone-color;
-  border-radius: 6px;
-  margin: 14px;
+  border-radius: $--px-6;
+  margin: calc($--px-10 + $--px-4);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -525,17 +529,17 @@ margin-top: 100px;
     color: $--info-text-color;
         font: {
         family: Gotham Rounded;
-        size: 15px;
+        size: $--px-15;
         style: normal;
         weight: 400;
         }
-line-height: 20px; 
+line-height: $--px-20; 
   }
   & h2{
     color: $--info-text-h2-color;
       font: {
         family: Futurica;
-        size: 46px;
+        size: calc($--px-40 + $--px-6);
         style: normal;
         weight: 700;
       }
@@ -547,30 +551,30 @@ text-transform: capitalize;
     color: $--info-text-h2-color;
         font: {
         family: Mulish;
-        size: 16px;
+        size:  calc($--px-15 + $--px-1);
         style: normal;
         weight: 400;
         }
-line-height: 24px;
+line-height: calc($--px-25 - $--px-1);
   }
 }
 .video{
   text-align: center;
   & iframe{
-    width: 461px;
+    width: calc(($--px-100 * 4) + $--px-60 + $--px-1);
   }
   
 }
 
 .student-text{
   background-color: $--main-two-color;
-  height: 245px;
-  padding: 25px;
+  height: calc(($--px-100 *2) + $--px-45);
+  padding: $--px-25;
   overflow: hidden;
   transition: 0.9s;
   & img{
-    width: 60px;
-    height: 60px;
+    width: $--px-60;
+    height: $--px-60;
     border-radius: 50%;
     display: block;
    
@@ -579,58 +583,58 @@ line-height: 24px;
     color: $--stu-sp-color;
         font: {
         family: Mulish;
-        size: 15px;
+        size: $--px-15;
         style: normal;
         weight: 700;
         }
-line-height: 20px;
+line-height: $--px-20;
   }
   & p{
     color: $--stu-pe-color;
         font: {
           family: Mulish;
-          size: 14px;
+          size: calc($--px-15 - $--px-1);
           style: normal;
           weight: 400;
         }
-line-height: 24px;
+line-height: calc($--px-25 - $--px-1);
 
 
   }
 }
 .student-text:hover{
-  height: 350px;
+  height: calc(($--px-100 * 3) + $--px-50);
 
 }
 
 .stu-icon{
   display: flex;
   justify-content: flex-end;
-  font-size: 30px;
+  font-size: $--px-30;
   & p{
     color: $--stu-ico-color;
 text-align: right;
       font: {
         family: Montserrat;
-        size: 20px;
+        size: $--px-20;
         style: normal;
         weight: 700;
       }
-line-height: 20px; /* 100% */
+line-height: $--px-20; 
   }
 }
 .student-head{
   text-align: center;
-  margin-top: 40px;
+  margin-top: $--px-40;
 }
 .info-text{
-  padding: 15px;
+  padding: $--px-15;
 }
 .info-foto{
-  font-size: 40px;
-  margin-top: 35px;
-  margin-left: 120px;
-  margin-right: 110px;
+  font-size: $--px-40;
+  margin-top: $--px-35;
+  margin-left: calc($--px-100 + $--px-20);
+  margin-right: calc($--px-100 + $--px-10);
   // width: 523px;
   // height: 330px;
 }
