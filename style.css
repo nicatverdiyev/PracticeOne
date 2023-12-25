@@ -45,7 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(224, 213, 213);
+  background: rgb(224, 213, 213);
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -53,6 +53,10 @@
 }
 
 .header {
+  background: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -68,20 +72,20 @@
 }
 .header .navbar a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   font-size: 14px;
   font-weight: 700;
   line-height: 17.57px;
 }
 .header .navbar a:hover {
-  color: pink;
+  color: #671C7C;
 }
 .header .icons a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 .header .icons a:hover {
-  color: pink;
+  color: #671C7C;
 }
 
 .header-text-1 h2 {
@@ -90,7 +94,7 @@
 }
 .header-text-1 p {
   margin-bottom: 15px;
-  color: black;
+  color: #000000;
   font-size: 14px;
   font-weight: 700;
   line-height: 17.57px;
@@ -109,7 +113,7 @@
   border-radius: 30px;
   background: #543EE9;
   border: none;
-  color: white;
+  color: #fff;
   margin-top: 20px;
 }
 
@@ -121,7 +125,7 @@
   margin-bottom: 30px;
 }
 .cards-head p {
-  color: black;
+  color: #000000;
   text-align: center;
   font-family: Mulish;
   font-size: 16px;
@@ -131,7 +135,7 @@
 }
 .cards-head h3 {
   text-align: center;
-  color: black;
+  color: #000000;
   font-family: Futurica;
   font-size: 30px;
   font-style: normal;
@@ -160,7 +164,7 @@
   align-items: flex-start;
   width: 100%;
   height: 320px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 20px;
   transition: 0.9s;
 }
@@ -226,7 +230,7 @@
   display: inline-block;
   padding: 12px 25px;
   background-color: aqua;
-  color: white;
+  color: #fff;
   font-weight: 500;
   text-decoration: none;
   border-radius: 8px;
@@ -309,7 +313,7 @@
 }
 
 .turn-card .front h5 {
-  color: white;
+  color: #fff;
   position: relative;
 }
 
@@ -326,7 +330,7 @@ img {
   background-color: #e0dee2;
   display: flex;
   /* justify-content: center; */
-  color: black;
+  color: #000000;
   /* text-align: center; */
   padding: 2rem 2.5rem;
   transition: 1s;
@@ -342,7 +346,7 @@ img {
   color: #52dec1;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 35px;
-  font-style: normal;
+  font-tyle: normal;
   font-weight: 700;
   line-height: 50px;
 }
@@ -581,7 +585,7 @@ img {
 }
 
 .student-text {
-  background-color: white;
+  background-color: #fff;
   height: 245px;
   padding: 25px;
   overflow: hidden;
