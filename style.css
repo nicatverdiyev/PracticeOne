@@ -1011,4 +1011,44 @@ img {
     max-width: 800px;
     height: auto;
   }
+}
+.main-footer {
+  margin-top: 2rem;
+  background-color: #671C7C;
+  padding: 30px 50px;
+  color: #fff;
+}
+.main-footer ul {
+  list-style: none;
+}
+.main-footer ul a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.9s;
+}
+.main-footer ul li {
+  margin-bottom: 10px;
+}
+.main-footer .footer-text {
+  padding: 30px 30px;
+  font-size: 12px;
+}
+.main-footer .footer-icons {
+  padding: 30px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-image img {
+    width: 300px;
+    margin-left: 210px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer-image img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.main-footer .footer-text a:hover {
+  color: #543EE9;
 }/*# sourceMappingURL=style.css.map */
