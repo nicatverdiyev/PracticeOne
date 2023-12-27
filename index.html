@@ -26,6 +26,10 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+/>
   </head>
   <body>
     <main>
@@ -918,6 +922,116 @@
       
           </section>
 
+          <section class="booxx">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="book-head">
+                  <h3>Sertifikatlar</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quaerat vel at blanditiis sequi id quisquam <br>repudiandae nemo suscipit quam fugit odio, expedita provident reiciendis velit ea? Saepe, officiis illum?</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="products">
+                  <div class="products-cards">
+                    <h2 class="names">Riyaziyyat</h2>
+                    <span class="price">₼10</span>
+                    <a class="popup-btn">Ətraflı</a>
+                    <img src="./image/n1(1).png" class="product-img" alt="" />
+                  </div>
+                  <div class="popup-view">
+                    <div class="popup-card">
+                      <a><i class="fas fa-times close-btn"></i></a>
+                      <div class="product-img">
+                        <img src="./image/n1(1).png" alt="" />
+                      </div>
+                      <div class="info">
+                        <h2>Riyaziyyat<br /><span>5-ci sinif</span></h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                          enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                          nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <span class="price">₼10</span>
+                        <a href="#" class="add-cart-btn">Əlave et</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="products">
+                  <div class="products-cards">
+                    <h2 class="names">Riyaziyyat</h2>
+                    <span class="price">₼15</span>
+                    <a class="popup-btn">Ətraflı</a>
+                    <img src="./image/n2.png" class="product-img" alt="" />
+                  </div>
+                  <div class="popup-view">
+                    <div class="popup-card">
+                      <a><i class="fas fa-times close-btn"></i></a>
+                      <div class="product-img">
+                        <img src="./image/n2.png" alt="" />
+                      </div>
+                      <div class="info">
+                        <h2>Riyaziyyat<br /><span>10-ci sinif</span></h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                          enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                          nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <span class="price">₼15</span>
+                        <a href="#" class="add-cart-btn">Əlave et</a>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="products">
+                  <div class="products-cards">
+                    <h2 class="names">Riyaziyyat</h2>
+                    <span class="price">₼20</span>
+                    <a class="popup-btn">Ətraflı</a>
+                    <img src="./image/n3.png" class="product-img" alt="" />
+                  </div>
+                  <div class="popup-view">
+                    <div class="popup-card">
+                      <a><i class="fas fa-times close-btn"></i></a>
+                      <div class="product-img">
+                        <img src="./image/n3.png" alt="" />
+                      </div>
+                      <div class="info">
+                        <h2>Riyaziyyat<br /><span>11-ci sinif</span></h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                          enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                          nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <span class="price">₼20</span>
+                        <a href="#" class="add-cart-btn">Əlavə et</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card-main-butn d-flex justify-content-center">
+                  <button class="card-butn">Hamısı</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
 
 
 
@@ -925,6 +1039,32 @@
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+
+    <script type="text/javascript">
+      var popupViews = document.querySelectorAll(".popup-view");
+      var popupBtns = document.querySelectorAll(".popup-btn");
+      var closeBtns = document.querySelectorAll(".close-btn");
+
+      //javascript for quick view button
+      var popup = function (popupClick) {
+        popupViews[popupClick].classList.add("active");
+      };
+
+      popupBtns.forEach((popupBtn, i) => {
+        popupBtn.addEventListener("click", () => {
+          popup(i);
+        });
+      });
+
+      //javascript for close button
+      closeBtns.forEach((closeBtn) => {
+        closeBtn.addEventListener("click", () => {
+          popupViews.forEach((popupView) => {
+            popupView.classList.remove("active");
+          });
+        });
+      });
+    </script>
 
     <script>
       var swiper = new Swiper(".slider-content", {
