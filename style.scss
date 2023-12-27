@@ -149,7 +149,7 @@ margin-top: $--px-20;
 border: 1px solid $--card-btn-color;
 }
 // ......cads........
-.container .card {
+.container .cardes {
     position: relative;
     display: flex;
     justify-content: center;
@@ -161,10 +161,10 @@ border: 1px solid $--card-btn-color;
     // box-shadow: 0 35px 80px rgba(0, 0, 0, 15);
     transition: 0.9s;
   }
-  .container .card:hover {
+  .container .cardes:hover {
     height: calc(($--px-100 * 3) + $--px-50);
   }
-  .container .card .imgBx {
+  .container .cardes .imgBx {
     position: absolute;
     top: $--px-0;
     width: 100%;
@@ -174,13 +174,13 @@ border: 1px solid $--card-btn-color;
     overflow: hidden;
     transition: 1s;
   }
-  .container .card:hover .imgBx {
+  .container .cardes:hover .imgBx {
     top: -100px;
     scale: 0.75;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 15);
     border-radius: $--px-20;
   }
-  .container .card .imgBx img {
+  .container .cardes .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -188,7 +188,7 @@ border: 1px solid $--card-btn-color;
     height: 100%;
     object-fit: cover;
   }
-  .container .card .content {
+  .container .cardes .content {
     position: absolute;
     top: calc(($--px-100 * 2) + $--px-35);
     width: 100%;
@@ -198,20 +198,20 @@ border: 1px solid $--card-btn-color;
     // text-align: center;
     transition: 0.9s;
   }
-  .container .card:hover .content {
+  .container .cardes:hover .content {
     top: calc($--px-100 + $--px-20);
     height: calc(($--px-100 * 2) + $--px-50);
   }
-  .container .card .content h2 {
+  .container .cardes .content h2 {
    font: {
       size: $--px-15;
       weight: 700;
    }
   }
-  .container .card .content p {
+  .container .cardes .content p {
     color: $--shadow-color;
   }
-  .container .card .content a {
+  .container .cardes .content a {
     position: relative;
     top: -9px;
     display: inline-block;
@@ -222,7 +222,7 @@ border: 1px solid $--card-btn-color;
     text-decoration: none;
     border-radius: $--px-8;
   }
-  .container .card .content span{
+  .container .cardes .content span{
     color: $--rebe-color;
   }
 .teacher{
@@ -668,6 +668,7 @@ line-height: $--px-20;
   text-align: center;
 }
 .products .products-cards {
+  box-shadow: 0 10px 25px $--prod-color;
   z-index: 1;
   background: $--rebe-color;
   position: relative;
@@ -690,16 +691,16 @@ line-height: $--px-20;
   left: 0;
   width: 50%;
   height: 100%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: $--px-10;
+  border-bottom-left-radius: $--px-10;
 }
 
 .products .products-cards .product-img {
   object-fit: contain;
   z-index: 1;
-  height: 225px;
+  height: calc($--px-100 * 2) + $--px-25;
   position: absolute;
-  max-width: 350px;
+  max-width: calc($--px-100 * 3) + $--px-50;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -707,40 +708,40 @@ line-height: $--px-20;
 
 .products .products-cards .names {
   z-index: 2;
-  color: #fff;
+  color: $--main-two-color;
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 130px;
-  font-size: 20px;
-  letter-spacing: 1px;
+  bottom: calc($--px-100 + $--px-30);
+  font-size: $--px-20;
+  letter-spacing: $--px-1;
 }
 
 .products .products-cards .price {
   z-index: 2;
-  color: #fff;
+  color: $--main-two-color;
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 80px;
-  font-size: 30px;
+  bottom: $--px-80;
+  font-size: $--px-30;
   font-weight: 300;
 }
 
 .products .products-cards .popup-btn {
   z-index: 2;
-  color: #fff;
+  color: $--main-two-color;
   background: $--butn-color;
   position: absolute;
-  bottom: 20px;
+  bottom: $--px-20;
   left: 50%;
   transform: translateX(-50%);
   font-size: 14px;
   // text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: $--px-1;
   padding: 10px 15px;
-  border-radius: 20px;
+  border-radius: $--px-20;
   cursor: pointer;
 }
 
@@ -748,7 +749,7 @@ line-height: $--px-20;
 
 .products .popup-view {
   z-index: 2;
-  background: rgba(201, 199, 199, 0.684);
+  background: $--popback-color;
   position: fixed;
   top: 0;
   right: 0;
@@ -770,13 +771,13 @@ line-height: $--px-20;
 .products .popup-card {
   position: relative;
   display: flex;
-  width: 800px;
-  height: 500px;
-  margin: 20px;
+  width: calc($--px-100 * 8);
+  height: calc($--px-100 * 5);
+  margin: $--px-20;
 }
 
 .products .popup-card .product-img {
-  height: 450px;
+  height: calc($--px-100 * 4) + $--px-50;
   z-index: 2;
   background: $--rebe-color;
   position: relative;
@@ -786,8 +787,8 @@ line-height: $--px-20;
   width: 45%;
   height: 90%;
   transform: translateY(25px);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: $--px-10;
+  border-bottom-left-radius: $--px-10;
 }
 
 .products .popup-card .product-img img {
@@ -806,30 +807,30 @@ line-height: $--px-20;
   width: 55%;
   height: 100%;
   box-sizing: border-box;
-  padding: 40px;
-  border-radius: 10px;
+  padding: $--px-40;
+  border-radius: $--px-10;
 }
 
 .products .popup-card .close-btn {
-  color: #555;
+  color: $--pop-butn-color;
   z-index: 3;
   position: absolute;
   right: 0;
-  font-size: 20px;
-  margin: 20px;
+  font-size: $--px-20;
+  margin: $--px-20;
   cursor: pointer;
 }
 
 .productss .popup-card .info h2 {
-  font-size: 40px;
-  line-height: 20px;
-  margin: 10px;
+  font-size: $--px-40;
+  line-height: $--px-20;
+  margin: $--px-10;
 }
 
 .products .popup-card .info h2 span {
-  font-size: 15px;
+  font-size: $--px-15;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: $--px-2;
   color: $--butn-color;
 }
 .info .price{
@@ -837,32 +838,32 @@ line-height: $--px-20;
 }
 
 .products .popup-card .info p {
-  font-size: 15px;
-  margin: 10px;
+  font-size: $--px-15;
+  margin: $--px-10;
 }
 
 .products .popup-card .info .prices {
-  font-size: 45px;
+  font-size: $--px-45;
   font-weight: 300;
-  margin: 10px;
+  margin: $--px-10;
 }
 
 .products .popup-card .info .add-cart-btn {
-  color: #fff;
-  background: #009dd2;
-  font-size: 16px;
+  color: $--main-two-color;
+  background: $--butn-color;
+  font-size: 1rem;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   margin: 10px auto;
   padding: 10px 50px;
-  border-radius: 20px;
+  border-radius: $--px-20;
 }
 
 .products .popup-card .info .add-wish {
   color: #009dd2;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
@@ -880,11 +881,11 @@ line-height: $--px-20;
   .products .popup-card .product-img {
     z-index: 3;
     width: 100%;
-    height: 200px;
+    height: calc($--px-100 * 2);
     transform: translateY(0);
     border-bottom-left-radius: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: $--px-10;
+    border-top-right-radius: $--px-10;
   }
 
   .products .popup-card .product-img img {
@@ -895,29 +896,29 @@ line-height: $--px-20;
   .products .popup-card .info {
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: $--px-20;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
 
   .products .popup-card .info h2 {
     margin: 20px 5px 5px 5px;
-    font-size: 25px;
+    font-size: $--px-25;
   }
 
   .products .popup-card .info h2 span {
-    font-size: 10px;
+    font-size: $--px-10;
     
   }
 
   .products .popup-card .info p {
-    margin: 5px;
+    margin: $--px-5;
     font-size: 13px;
   }
 
   .products .popup-card .info .prices {
-    margin: 5px;
-    font-size: 30px;
+    margin: $--px-5;
+    font-size: $--px-30;
   }
 
   .products .popup-card .info .add-cart-btn {
@@ -932,5 +933,94 @@ line-height: $--px-20;
 
   .products .popup-card .close-btn {
     z-index: 4;
+  }
+}
+// ...............NEWS......
+
+.news-head{
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.card {
+  position: relative;
+  background: #fff;
+  width: 350px;
+  box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.card .card-img {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .card-img img {
+  width: 102%;
+  height: 102%;
+}
+
+.card-content {
+  position: relative;
+  text-align: center;
+  margin: 15px;
+}
+
+.card-content .text {
+  position: relative;
+  font-size: 0.9em;
+  text-align: left;
+  height: 100px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.card-content .text:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #fff, transparent);
+  display: none;
+}
+
+.card.gradient .card-content .text:before {
+  display: block;
+}
+
+.card-content .see-more-btn {
+  font-size: 0.85em;
+  color: #777;
+  user-select: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.card-content .see-more-btn:hover {
+  color: #111;
+}
+
+/*======= Media queries (max-width: 450px) =======*/
+@media screen and (max-width: 450px) {
+  .card-container {
+    margin: 15px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card .card-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
   }
 }
