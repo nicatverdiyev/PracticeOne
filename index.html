@@ -1126,64 +1126,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 
-    <script type="text/javascript">
-      var popupViews = document.querySelectorAll(".popup-view");
-      var popupBtns = document.querySelectorAll(".popup-btn");
-      var closeBtns = document.querySelectorAll(".close-btn");
+    <script src="popup.js"></script>
+   <script src="slider.js"></script>
 
-      //javascript for quick view button
-      var popup = function (popupClick) {
-        popupViews[popupClick].classList.add("active");
-      };
-
-      popupBtns.forEach((popupBtn, i) => {
-        popupBtn.addEventListener("click", () => {
-          popup(i);
-        });
-      });
-
-      //javascript for close button
-      closeBtns.forEach((closeBtn) => {
-        closeBtn.addEventListener("click", () => {
-          popupViews.forEach((popupView) => {
-            popupView.classList.remove("active");
-          });
-        });
-      });
-    </script>
-
-    <script>
-      var swiper = new Swiper(".slider-content", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        // slidesPerGroup: 3,
-        loop: true,
-        // loopFillGroupWithBlank: true,
-        centerSlide: 'true',
-        fade: 'true',
-        grapCursor: 'true',
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          520: {
-            slidesPerView: 2,
-          },
-          950: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
   </body>
 </html>
