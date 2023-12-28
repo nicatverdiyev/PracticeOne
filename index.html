@@ -6,6 +6,18 @@
     <title>Document</title>
     <link
     rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
+    integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+    <!-- .......... -->
+    <link
+    rel="stylesheet"
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
   />
     <link rel="stylesheet" href="./style.css" />
@@ -33,31 +45,117 @@
   </head>
   <body>
     <main>
-      <div class="container">
-        <header class="header">
-          <a href=""><img src="./image/image 7.png" alt="" class="logo" /></a>
-          <nav class="navbar">
-            <a href="#haqqımızda">Haqqımızda</a>
-            <a href="#kurslar">Kurslar</a>
-            <a href="#imtahanlar">İmtahanlar</a>
-            <a href="#müellimler">Müellimler</a>
-            <a href="#mezunlar">Mezunlar</a>
-            <a href="#sertfikatlar">Sertfikatlar</a>
-            <a href="#kitablar">Kitablar</a>
-            <a href="#xeberler">Xeberler</a>
-            <a href="#elaqe">Elaqe</a>
-            
-          </nav>
-          <div class="icons">
-            <a href=""><i class="fa-regular fa-heart"></i></a>
-            <a href=""><i class="fa-regular fa-user"></i></a>
-            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-          </div>
+      <header class="header" id="header">
+        <nav class="nav1">
+          <a href="#" class="nav__logo"><img src="./image/image 7.png" alt=""></a>
+  
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Haqqımızda</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#" class="nav__link">Kurslar</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#" class="nav__link">İmtahanlar</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#" class="nav__link">Müellimler</a>
+              </li>
+  
+              <li class="nav__item">
+                <a href="#" class="nav__link">Sertfikatlar</a>
+              </li>
 
-          <button class="icons-3">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </header>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Kitablar</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">Xeberler</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">Elaqe</a>
+              </li>
+            </ul>
+  
+            <!-- close button -->
+            <div class="nav__close" id="nav-close">
+              <i class="ri-close-line"></i>
+            </div>
+          </div>
+  
+          <div class="nav__actions">
+            <!-- search button -->
+            <i class="ri-search-line nav__search" id="search-btn"></i>
+  
+            <!-- login button -->
+            <i class="ri-user-line nav__login" id="login-btn"></i>
+  
+            <!-- toogle button -->
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+  
+      <div class="search" id="search">
+        <form action="" class="search__form">
+          <i class="ri-search-line search__icon"></i>
+          <input
+            type="search"
+            placeholder="What are you looking for?"
+            class="search__input"
+          />
+        </form>
+        <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+  
+      <div class="login" id="login">
+        <form action="" class="login__form">
+          <h2 class="login__title">Log In</h2>
+  
+          <div class="login__group">
+            <div>
+              <label for="email" class="login__label">Email</label>
+              <input
+                type="email"
+                placeholder="Email ünvanınızı yazın"
+                class="login__input"
+                id="email"
+              />
+            </div>
+            <div>
+              <label for="password" class="login__label">Password</label>
+              <input
+                type="password"
+                placeholder="Parolunuzu yazın"
+                class="login__input"
+                id="password"
+              />
+            </div>
+          </div>
+  
+          <div>
+            <p class="login__sigup">Profiliniz yoxdur? <a href="#">Sign up</a></p>
+  
+            <a href="#" class="login__forgot"> Siz parolunuzu unutmusuz? </a>
+  
+            <button type="submit" class="login__button">Log in</button>
+          </div>
+        </form>
+  
+        <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+      <div class="container">
+      
+        
         <section class="section-text-video" id="haqqımızda">
           <!-- <div class="container"> -->
           <div class="row g-5">
@@ -1185,6 +1283,7 @@
 
     <script src="popup.js"></script>
    <script src="slider.js"></script>
+   <script src="menu.js"></script>
 
   </body>
 </html>

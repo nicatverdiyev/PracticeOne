@@ -26,47 +26,7 @@
     }
     
 }
-.header{
-    // background-color: #e4e0e0 !important;
-    // background-color: $--ico-color;
-    background: $--main-two-color;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    // box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    
-    & .navbar{
-        display: flex;
-        gap: 12px;
-        flex-wrap: wrap;
-        & a{
-                text-decoration: none;
-                color: $--main-color;
-                font: {
-                size: 14px;
-                weight: 700;
-                }
-                line-height: 17.57px;
-        }
-        & a:hover{
-            color: $--rebe-color;
-        }
-    }
-    & .icons a{
-        text-decoration: none;
-        color: $--main-color;
-    }
-    & .icons a:hover{
-        color: $--rebe-color;
-    } 
-}
+
 .header-text-1{
 
     //  & span{
@@ -1053,6 +1013,7 @@ line-height: $--px-20;
 
   }
 }
+
 @media screen and (min-width:768px) {
   .footer-image img{
     width: 300px;
@@ -1072,4 +1033,244 @@ line-height: $--px-20;
 // }
 .main-footer .footer-text a:hover{
   color: #543EE9;
+}
+// .......................HEADERmenu.......................
+input,
+button {
+  border: none;
+  outline: none;
+}
+ul {
+  list-style: none !important;
+  padding-left: 0rem !important;
+  margin-bottom: 0 !important;
+}
+a {
+  text-decoration: none !important;
+}
+
+.search,
+.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: hsla(230, 75%, 32%, 0.1);
+  backdrop-filter: blur(24px);
+  padding: 8rem 1.5rem 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+.search__close,
+.login__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+}
+.header {
+  // position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white !important;
+  padding: 20px;
+  //  box-shadow: 0 2px 16px rgb(126, 72, 72); 
+}
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+  color: rgb(117, 16, 16);
+  transition: color 0.4s;
+}
+.nav__actions {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.nav__search,
+.nav__login,
+.nav__toggle,
+.nav__close {
+  font-size: 1.25rem;
+  color: rebeccapurple;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+:is(.nav__logo, .nav__search, .nav__login, .nav__toogle, .nav__link):hover {
+  color: blue;
+}
+
+/* NAVİQASİYA MOBİLE MOD */
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: white;
+    /* box-shadow: 0 8px 16px black; */
+    width: 100%;
+    padding-block: 4.5rem 4rem;
+    transition: top 0.4s;
+  }
+}
+@media screen and (min-width: 576px) {
+  .search,
+  .login {
+    padding: 10rem;
+  }
+  .search__form {
+    max-width: 450px;
+    margin-inline: auto;
+  }
+  /* .search__close,
+  .login__close {
+    width: max-content;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+  } */
+
+  .login__form {
+    max-width: 400px;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .nav1 {
+    // height: calc(3.5rem + 2rem);
+    column-gap: 3rem;
+  }
+  .nav__close,
+  .nav__toggle {
+    display: none;
+  }
+  .nav__menu {
+    // margin-left: auto;
+  }
+  .nav__list {
+    flex-direction: row !important;
+    column-gap: 3rem;
+  }
+}
+// @media screen and (min-width: 1150px) {
+//   .container {
+//     // margin-inline: auto;
+//   }
+// }
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  text-align: center;
+}
+.nav__link {
+  color: black;
+  transition: color 0.4s;
+}
+.nav__close {
+  position: absolute;
+  top: 1.15rem;
+  right: 1.5rem;
+}
+.show-menu {
+  top: 0;
+}
+.search__form {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: hsla(230, 100%, 97%);
+  box-shadow: 0 8px 32px hsla(230, 75%, 15%, 0.2);
+  padding-inline: 1rem;
+  border-radius: 0.5rem;
+  transform: translateY(-1rem);
+  transition: transform 0.4s;
+}
+.search__icon {
+  font-size: 1.25rem;
+  color: black;
+}
+.search__input {
+  width: 100%;
+  padding-block: 1rem;
+  background-color: hsla(230, 100%, 97%);
+  color: black;
+}
+.show-search {
+  opacity: 1;
+  pointer-events: initial;
+}
+.show-search .search__form {
+  transform: translateY(0);
+}
+.login__form,
+.login__group {
+  display: grid;
+}
+.login__form {
+  background-color: hsla(230, 100%, 97%);
+  padding: 2rem 1.5rem 2.5rem;
+  box-shadow: 0 8px 32px hsla(230, 75%, 15%, 0.2);
+  border-radius: 1rem;
+  row-gap: 1.25rem;
+  text-align: center;
+  transform: translateY(-1rem);
+  transition: transform 0.4s;
+}
+.login__title {
+  font-size: 1.5rem;
+  color: hsla(230, 75%, 15%);
+}
+.login__label {
+  display: block;
+  text-align: initial;
+  color: hsla(230, 75%, 15%);
+  margin-bottom: 0.25rem;
+}
+.login__input {
+  width: 100%;
+  background-color: hsla(230, 100%, 97%);
+  border: 2px solid hsla(230, 25%, 80%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: black;
+}
+.login__signup a {
+  color: hsla(230, 75%, 56%);
+}
+.login__forgot {
+  display: inline-block;
+  color: hsla(230, 75%, 56%);
+  margin-bottom: 1.25rem;
+}
+.login__button {
+  display: inline-block;
+  background-color: hsla(230, 75%, 56%);
+  width: 100%;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.4s;
+}
+.login__button:hover {
+  box-shadow: 0 4px 24px hsla(230, 75%, 40%, 0.4);
+}
+.show-login {
+  opacity: 1;
+  pointer-events: initial;
+}
+.show-login,
+.login__form {
+  transform: translateY(0);
 }
