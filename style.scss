@@ -1,14 +1,16 @@
 @import './responsive.scss';
 @import './variables.scss';
-.container{
+#contOne{
     
-    background: url(./image/Ekran\ Resmi\ 2023-12-14\ 23.36.39.png) !important;
+    // background: url(./image/Ekran\ Resmi\ 2023-12-14\ 23.36.39.png) !important;
+    // background: #fafafa;
 }
 @media screen and (max-width:992px){
   .teach-img{
       margin-left: 0px !important;
   }
 }
+
 .icons{
     cursor: pointer;
      display: flex;
@@ -118,6 +120,7 @@ border: 1px solid $--card-btn-color;
     height: calc(($--px-100 * 3) + $--px-20);
     background-color: $--main-two-color;
     border-radius: $--px-20;
+    box-shadow: 0 1px 5px hsla(230, 13%, 9%, 0.4);
     // box-shadow: 0 35px 80px rgba(0, 0, 0, 15);
     transition: 0.9s;
   }
@@ -130,7 +133,7 @@ border: 1px solid $--card-btn-color;
     width: 100%;
     height: calc(($--px-100 * 2) + $--px-20);
     background-color: $--shadow-color;
-    // border-radius: 12px;
+     border-radius: 12px;
     overflow: hidden;
     transition: 1s;
   }
@@ -1074,12 +1077,13 @@ a {
   cursor: pointer;
 }
 .header {
-  // position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   background-color: white !important;
   padding: 20px;
+  z-index: 3;
   //  box-shadow: 0 2px 16px rgb(126, 72, 72); 
 }
 .nav1 {
@@ -1273,4 +1277,52 @@ a {
 .show-login,
 .login__form {
   transform: translateY(0);
+}
+.aboutPageİmage{
+  width: 80px;
+}
+.about--img{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+.aboutCard{
+  padding: 2rem;
+  background-color: $--main-two-color;
+  margin-bottom: 1rem;
+  transition: .9s;
+  transform: scale(1);
+  
+  // text-align: center;
+}
+.prefer-head{
+  margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  & p{
+    color: #353535;
+  }
+}
+.aboutCard:hover{
+  transform: scale(1.06);
+}
+.miniPage{
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 4rem;
+  & .miniPageTextTwo{
+    color: $--stu-sp-color;
+  }
+}
+.miniPageTextOne,
+.miniPageTextTwo{
+  font-size: 10px;
+  margin-top: -8px;
+  margin-bottom: 0 !important;
+  margin-right: .7rem;
+  margin-left: .7rem;
+}
+.ceoText{
+  padding: 1rem;
+  // background-color: $--main-two-color;
 }
