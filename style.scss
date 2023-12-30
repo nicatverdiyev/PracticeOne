@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=M+PLUS+Rounded+1c:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import './responsive.scss';
 @import './variables.scss';
 #contOne{
@@ -24,7 +25,7 @@
         width: 45px;
         height: 45px;
         border-radius: 50%;
-        margin-left: 10px;
+        margin-left: 0.625rem;
     }
     
 }
@@ -174,17 +175,17 @@ border: 1px solid $--card-btn-color;
   .container .cardes .content p {
     color: $--shadow-color;
   }
-  .container .cardes .content a {
-    position: relative;
-    top: -9px;
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: $--aqua-color;
-    color: $--main-two-color;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: $--px-8;
-  }
+  // .container .cardes .content a {
+  //   position: relative;
+  //   top: -9px;
+  //   display: inline-block;
+  //   padding: 12px 25px;
+  //   background-color: $--aqua-color;
+  //   color: $--main-two-color;
+  //   font-weight: 500;
+  //   text-decoration: none;
+  //   border-radius: $--px-8;
+  // }
   .container .cardes .content span{
     color: $--rebe-color;
   }
@@ -356,7 +357,7 @@ img {
 .swiper {
   width: 100%;
   // height: 300px;
-  margin: 20px auto;
+  margin: 1.25rem auto;
 }
 
 .append-buttons {
@@ -370,9 +371,9 @@ img {
   border: 1px solid $--butn-color;
   color: $--butn-color;
   text-decoration: none;
-  padding: 4px 10px;
+  padding: 4px 0.625rem;
   border-radius: $--px-4;
-  margin: 0 10px;
+  margin: 0 0.625rem;
   font-size: calc($--px-10 + $--px-3);
 }
 .slider-box{
@@ -637,8 +638,8 @@ line-height: $--px-20;
   position: relative;
   // width: 300px;
   height: 400px;
-  margin: 40px;
-  border-radius: 10px;
+  margin: 2.5rem;
+  border-radius: 0.625rem;
 }
 // @media screen and(min-width:768px) {
 //   .products .products-cards{
@@ -910,9 +911,9 @@ line-height: $--px-20;
   background: #fff;
   width: 350px;
   box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .card .card-img {
@@ -1035,7 +1036,7 @@ line-height: $--px-20;
 //   }
 // }
 .main-footer .footer-text a:hover{
-  color: #543EE9;
+  color: $--footer-color;
 }
 // .......................HEADERmenu.......................
 input,
@@ -1060,7 +1061,7 @@ a {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  background-color: hsla(230, 75%, 32%, 0.1);
+  background-color: $--log-color;
   backdrop-filter: blur(24px);
   padding: 8rem 1.5rem 0;
   opacity: 0;
@@ -1073,7 +1074,7 @@ a {
   top: 2rem;
   right: 2rem;
   font-size: 1.5rem;
-  color: black;
+  color: $--main-color;
   cursor: pointer;
 }
 .header {
@@ -1082,7 +1083,7 @@ a {
   left: 0;
   width: 100%;
   background-color: white !important;
-  padding: 20px;
+  padding: 1.25rem;
   z-index: 3;
   //  box-shadow: 0 2px 16px rgb(126, 72, 72); 
 }
@@ -1092,7 +1093,7 @@ a {
   align-items: center;
 }
 .nav__logo {
-  color: rgb(117, 16, 16);
+  color: $--nav-logo-color;
   transition: color 0.4s;
 }
 .nav__actions {
@@ -1105,12 +1106,12 @@ a {
 .nav__toggle,
 .nav__close {
   font-size: 1.25rem;
-  color: rebeccapurple;
+  color: $--rebe-two-color;
   cursor: pointer;
   transition: color 0.4s;
 }
 :is(.nav__logo, .nav__search, .nav__login, .nav__toogle, .nav__link):hover {
-  color: blue;
+  color: $--blu-color;
 }
 
 /* NAVİQASİYA MOBİLE MOD */
@@ -1119,7 +1120,7 @@ a {
     position: fixed;
     top: -100%;
     left: 0;
-    background-color: white;
+    background-color: $--main-two-color;
     /* box-shadow: 0 8px 16px black; */
     width: 100%;
     padding-block: 4.5rem 4rem;
@@ -1194,8 +1195,8 @@ a {
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
-  background-color: hsla(230, 100%, 97%);
-  box-shadow: 0 8px 32px hsla(230, 75%, 15%, 0.2);
+  background-color: $--search-color;
+  box-shadow: 0 8px 32px $--search-shad-color;
   padding-inline: 1rem;
   border-radius: 0.5rem;
   transform: translateY(-1rem);
@@ -1203,13 +1204,13 @@ a {
 }
 .search__icon {
   font-size: 1.25rem;
-  color: black;
+  color: $--main-color;
 }
 .search__input {
   width: 100%;
   padding-block: 1rem;
-  background-color: hsla(230, 100%, 97%);
-  color: black;
+  background-color: $--search-color;
+  color: $--main-color;
 }
 .show-search {
   opacity: 1;
@@ -1223,9 +1224,9 @@ a {
   display: grid;
 }
 .login__form {
-  background-color: hsla(230, 100%, 97%);
+  background-color: $--search-color;
   padding: 2rem 1.5rem 2.5rem;
-  box-shadow: 0 8px 32px hsla(230, 75%, 15%, 0.2);
+  box-shadow: 0 8px 32px $--search-shad-color;
   border-radius: 1rem;
   row-gap: 1.25rem;
   text-align: center;
@@ -1234,41 +1235,41 @@ a {
 }
 .login__title {
   font-size: 1.5rem;
-  color: hsla(230, 75%, 15%);
+  color: $--log-title-color;
 }
 .login__label {
   display: block;
   text-align: initial;
-  color: hsla(230, 75%, 15%);
+  color: $--log-title-color;
   margin-bottom: 0.25rem;
 }
 .login__input {
   width: 100%;
-  background-color: hsla(230, 100%, 97%);
-  border: 2px solid hsla(230, 25%, 80%);
+  background-color: $--search-color;
+  border: 2px solid $--log-bor-color;
   padding: 1rem;
   border-radius: 0.5rem;
-  color: black;
+  color: $--main-color;
 }
 .login__signup a {
-  color: hsla(230, 75%, 56%);
+  color: $--log-a-color;
 }
 .login__forgot {
   display: inline-block;
-  color: hsla(230, 75%, 56%);
+  color: $--log-a-color;
   margin-bottom: 1.25rem;
 }
 .login__button {
   display: inline-block;
-  background-color: hsla(230, 75%, 56%);
+  background-color: $--log-a-color;
   width: 100%;
-  color: #fff;
+  color: $--main-two-color;
   padding: 1rem;
   cursor: pointer;
   transition: box-shadow 0.4s;
 }
 .login__button:hover {
-  box-shadow: 0 4px 24px hsla(230, 75%, 40%, 0.4);
+  box-shadow: 0 4px 24px $--log-hov-color;
 }
 .show-login {
   opacity: 1;
@@ -1300,7 +1301,7 @@ a {
   text-align: center;
   margin-bottom: 2rem;
   & p{
-    color: #353535;
+    color: $--card-btn-color;
   }
 }
 .aboutCard:hover{
@@ -1314,9 +1315,14 @@ a {
     color: $--stu-sp-color;
   }
 }
+@media screen and (max-width:992px) {
+  .miniPage{
+    margin-left: 0;
+  }
+}
 .miniPageTextOne,
 .miniPageTextTwo{
-  font-size: 10px;
+  font-size: 0.625rem;
   margin-top: -8px;
   margin-bottom: 0 !important;
   margin-right: .7rem;
@@ -1326,3 +1332,182 @@ a {
   padding: 1rem;
   // background-color: $--main-two-color;
 }
+// .dddd{
+//  background-color: red;
+//  height: 200px;
+// }
+.course-two-btn{
+  // background-color: #fff;
+  color: $--main-color;
+}
+.course-about-text ul{
+  list-style-type: disc !important;
+}
+.course-about-text{
+  margin-left: 100px;
+  padding-left: 1.25rem;
+}
+@media screen and (max-width:992px) {
+  .course-about-text{
+    margin-left: 0px;
+  }
+}
+
+.course-about-text ul li{
+  margin-bottom: 1rem;
+}
+.course-about-icons{
+  margin-top: 0.625rem;
+  margin-bottom: 1.25rem;
+  // display: inline-block;
+  .course-icon{
+    // display: block;
+    width: 1.875rem;
+    height:1.875rem;
+    background-color:  $--cou-ico-colo;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; margin-bottom: 12px;
+    color: $--main-two-color;
+  }
+}
+.course-icon-box {
+  display: flex;
+}
+.course-icon-box-text{
+  color: $--stu-sp-color !important;
+font-family: Mulish;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.875rem; 
+  margin-left: 0.625rem;
+}
+.course-about{
+  margin-top: 9.375rem;
+}
+// .........................
+.container .cardess {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: calc(($--px-100 * 3) + $--px-20);
+  background-color: $--main-two-color;
+  border-radius: $--px-20;
+  box-shadow: 0 1px 5px hsla(230, 13%, 9%, 0.4);
+  // box-shadow: 0 35px 80px rgba(0, 0, 0, 15);
+  transition: 0.9s;
+}
+.container .cardess:hover {
+  height: 31.25rem;
+}
+.container .cardess .imgBx {
+  position: absolute;
+  top: $--px-0;
+  width: 100%;
+  height: calc(($--px-100 * 2) + $--px-20);
+  background-color: $--shadow-color;
+   border-radius: 12px;
+  overflow: hidden;
+  transition: 1s;
+}
+.container .cardess:hover .imgBx {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 15);
+  border-radius: $--px-20;
+}
+.container .cardess .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .cardess .content {
+
+  position: absolute;
+  top: calc(($--px-100 * 2) + $--px-35);
+  width: 100%;
+  padding: 3px 7px;
+  overflow: hidden;
+  height: $--px-30;
+  // text-align: center;
+  transition: 0.9s;
+}
+.container .cardess:hover .content {
+  top: calc($--px-100 + $--px-20);
+  height: calc(($--px-100 * 3) + $--px-30);
+}
+.container .cardess .content h2 {
+ font: {
+    size: $--px-20;
+    weight: 700;
+ }
+}
+.container .cardess .content p {
+  color: $--shadow-color;
+}
+// .container .cardes .content a {
+//   position: relative;
+//   top: -9px;
+//   display: inline-block;
+//   padding: 12px 25px;
+//   background-color: $--aqua-color;
+//   color: $--main-two-color;
+//   font-weight: 500;
+//   text-decoration: none;
+//   border-radius: $--px-8;
+// }
+.container .cardess .content span{
+  color: $--rebe-color;
+}
+
+.course-about-text-two{
+  // background-color: $--main-two-color;
+  background: $--main-two-color;
+box-shadow: 0px 0px 10px 0px rgba(190, 190, 190, 0.50);
+  padding: 60px;
+  margin-left: 70px;
+}
+.course-about-text-two ul{
+  list-style-type: disc !important;
+}
+@media screen and (max-width:992px) {
+  .course-about-text-two{
+    margin-left: 0px;
+  padding: 1.25rem;
+  }
+
+}
+@media screen and (max-width:992px) {
+  .imm #course-img{
+    margin-top: 11rem;
+  }
+
+}
+@media screen and (max-width:768px) {
+  .imm #course-img{
+    margin-top: 1rem
+  }
+
+}
+.courses-about{
+  margin-top: 3rem;
+}
+.course-icon-two{
+  cursor: pointer;
+  width: 28px;
+height: 28px;
+background-color:$--stu-ico-color;
+color: $--main-two-color;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
