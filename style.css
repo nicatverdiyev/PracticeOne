@@ -1392,6 +1392,7 @@ a {
   border-radius: 20px;
   box-shadow: 0 1px 5px hsla(230, 13%, 9%, 0.4);
   transition: 0.9s;
+  margin-bottom: 1.25rem;
 }
 
 .container .cardess:hover {
@@ -1632,4 +1633,75 @@ html {
 }
 .faiz-icon-one {
   color: #543EE9;
+}
+
+.leader-board {
+  margin-top: 3rem;
+}
+
+.leader-box {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(190, 190, 190, 0.5);
+}
+
+.leader-box-two {
+  display: flex;
+  justify-content: end;
+}
+
+.leader-box-three-img {
+  display: flex;
+}
+.leader-box-three-img img {
+  width: 80px;
+}
+.leader-box-three-img p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.leader-box-three-img-1 {
+  display: flex;
+}
+.leader-box-three-img-1 img {
+  width: 80px;
+}
+.leader-box-three-img-1 p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.leader-box-four p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.leader-box-five p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.leader-box-two-text {
+  margin-left: 238px;
+  margin-right: 48px;
+  color: #FE5538;
+}
+
+.leader-board-main {
+  margin-left: 60px;
+}
+
+.leader-box-two-text-one {
+  color: #FE5538;
+}
+
+@media screen and (max-width: 992px) {
+  .leader-board {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

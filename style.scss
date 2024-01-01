@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=M+PLUS+Rounded+1c:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import './responsive.scss';
 @import './variables.scss';
-#contOne{
-    
-    // background: url(./image/Ekran\ Resmi\ 2023-12-14\ 23.36.39.png) !important;
-    // background: #fafafa;
-}
+
 @media screen and (max-width:992px){
   .teach-img{
       margin-left: 0px !important;
@@ -1160,9 +1156,7 @@ a {
   .nav__toggle {
     display: none;
   }
-  .nav__menu {
-    // margin-left: auto;
-  }
+  
   .nav__list {
     flex-direction: row !important;
     column-gap: 3rem;
@@ -1400,6 +1394,7 @@ line-height: 1.875rem;
   box-shadow: 0 1px 5px hsla(230, 13%, 9%, 0.4);
   // box-shadow: 0 35px 80px rgba(0, 0, 0, 15);
   transition: 0.9s;
+  margin-bottom: 1.25rem;
 }
 .container .cardess:hover {
   height: 31.25rem;
@@ -1657,3 +1652,65 @@ html {
 .faiz-icon-one{
   color: #543EE9;
 }
+.leader-board{
+  margin-top: 3rem;
+}
+.leader-box{
+  background-color: $--main-two-color;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(190, 190, 190, 0.5);
+}
+.leader-box-two{
+  display: flex;
+  justify-content: end;
+}
+.leader-box-three-img{
+  display: flex;
+  & img{
+    width: 80px;
+  }
+  & p{
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+.leader-box-three-img-1{
+  display: flex;
+  & img{
+    width: 80px;
+    
+  }
+  & p{
+    margin-top: 20px;
+    margin-bottom: 0;
+    
+  }
+}
+.leader-box-four p{
+margin-top: 20px;
+margin-bottom: 0;
+}
+.leader-box-five p{
+  margin-top: 20px;
+  margin-bottom: 0;
+  }
+  .leader-box-two-text{
+    margin-left: 238px;
+    margin-right: 48px;
+    color: #FE5538;
+  }
+  .leader-board-main{
+    margin-left: 60px;
+  }
+  .leader-box-two-text-one{
+    color: #FE5538;
+  }
+  @media screen and (max-width:992px) {
+    .leader-board{
+      display: none;
+    }
+  }
