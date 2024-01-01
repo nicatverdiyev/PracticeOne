@@ -1461,6 +1461,16 @@ a {
   margin-left: 70px;
 }
 
+.course-about-text-two-p {
+  color: #543EE9;
+  margin-bottom: 20px;
+  font-family: Futurica;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .course-about-text-two ul {
   list-style-type: disc !important;
 }
@@ -1495,4 +1505,131 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .course-mini-text {
+    flex-wrap: wrap;
+  }
+}
+.course-about-text-two-icons {
+  color: #543EE9;
+}
+
+.addition-icons {
+  color: #543EE9;
+  padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .addition-icons {
+    padding: 0;
+    padding-top: 10px;
+  }
+}
+.cardn {
+  padding: 60px;
+  margin-left: 70px;
+}
+
+.course-about-text-two-spa {
+  color: #FE5538;
+  font-family: Mulish;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 166.667% */
+}
+
+.bar {
+  background: var(--card-bg-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 992px) {
+  .bar {
+    padding: 0;
+  }
+  .cardn {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
+.bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: var(--small-font-size);
+}
+
+.bar .info span {
+  font-weight: 500;
+}
+
+.bar .line {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  background: #c5cadf;
+  border-radius: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bar .line:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #3AD4D8;
+  border-radius: 2px;
+}
+
+.bar .html:before {
+  width: 95%;
+}
+
+.bar .css:before {
+  width: 85%;
+}
+
+.bar .javascript:before {
+  width: 80%;
+}
+
+.bar .jquery:before {
+  width: 80%;
+}
+
+.bar .php:before {
+  width: 75%;
+}
+
+.education {
+  display: inline-block;
+  width: 70%;
+}
+
+.faiz-icon {
+  margin-top: 56px;
+  margin-left: -9px;
+  width: 200px;
+  box-shadow: 0px 0px 10px 0px rgba(190, 190, 190, 0.5);
+  border: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .faiz-icon {
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+}
+.faiz-icon-one {
+  color: #543EE9;
 }/*# sourceMappingURL=style.css.map */
