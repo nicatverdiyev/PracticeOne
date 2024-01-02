@@ -20,9 +20,10 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/scss/style.css" />
     <!-- <link rel="stylesheet" href="./layout.css" /> -->
-    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./css/scss/responsive.css" />
+    <link rel="stylesheet" href="./css/scss/variables.css" />
     <script
       src="https://kit.fontawesome.com/0766d272ec.js"
       crossorigin="anonymous"
@@ -78,11 +79,11 @@
               </li>
 
               <li class="nav__item">
-                <a href="#" class="nav__link">Xeberler</a>
+                <a href="./news.html" class="nav__link">Xeberler</a>
               </li>
 
               <li class="nav__item">
-                <a href="#" class="nav__link">Elaqe</a>
+                <a href="./contact.html" class="nav__link">Elaqe</a>
               </li>
             </ul>
 
@@ -164,406 +165,281 @@
           class="fa-solid fa-circle fa-2xs"
           style="color: #1eff00; font-size: 7px"
         ></i>
-       
+
         <span class="miniPageTextTwo">Müellimler</span>
       </div>
       <div class="container">
         <section class="teacher" id="">
-            <div class="row g-5">
-              <div class="col-lg-6 col-md-12">
-                <div class="teach-head">
-                  <p class="teacher-mini-text">Riyaziyyat</p>
-                  <h3>Nailə Axundova</h3>
-                </div>
-                <div class="teach-about">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores nulla suscipit aperiam, animi, praesentium saepe eum at accusamus molestias doloribus qui alias perspiciatis eius eaque amet culpa sapiente necessitatibus quaerat.</p>
-  
-                  <button class="all-but">Qeydiyyatdan keç</button>
-                </div>
+          <div class="row g-5">
+            <div class="col-lg-6 col-md-12">
+              <div class="teach-head">
+                <p class="teacher-mini-text">Riyaziyyat</p>
+                <h3>Nailə Axundova</h3>
               </div>
-              <div class="col-lg-6 col-md-12">
-                <div class="teach-img" >
-                  <img src="./image/teacher.png" alt="">
-                </div>
-               
-              </div>
-              
-            </div>
-          </section>
+              <div class="teach-about">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Maiores nulla suscipit aperiam, animi, praesentium saepe eum
+                  at accusamus molestias doloribus qui alias perspiciatis eius
+                  eaque amet culpa sapiente necessitatibus quaerat.
+                </p>
 
-          <section class="leader-board">
-            <div class="row">
-              <!-- <div class="col-lg-4 col-md-6"></div> -->
-              <div class="col-lg-12 col-md-12">
-                <div class="leader-board-main">
-                  <div class="leader-box-one">
-                    <h3>Nailiyyət</h3>
+                <button class="all-but">Qeydiyyatdan keç</button>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="teach-img">
+                <img src="./image/teacher.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="leader-board">
+          <div class="row">
+            <!-- <div class="col-lg-4 col-md-6"></div> -->
+            <div class="col-lg-12 col-md-12">
+              <div class="leader-board-main">
+                <div class="leader-box-one">
+                  <h3>Nailiyyət</h3>
+                </div>
+                <div class="leader-box-two">
+                  <p
+                    class="leader-box-two-text-one"
+                    id="leader-box-two-text-one"
+                  >
+                    Təcrübə
+                  </p>
+                  <p id="leader-box-two-text">Tələbələr</p>
+                </div>
+                <div class="leader-box">
+                  <div class="leader-box-three">
+                    <div class="leader-box-three-img">
+                      <img src="./image/leader1.png" alt="" />
+                      <p>Aytekin Şirinova</p>
+                    </div>
                   </div>
-                  <div class="leader-box-two">
-                   
-                    <p class="leader-box-two-text-one" id="leader-box-two-text-one">Təcrübə</p>
-                    <p id="leader-box-two-text">Tələbələr</p>
+                  <div class="leader-box-four">
+                    <p>23 il</p>
                   </div>
-                  <div class="leader-box">
-                    <div class="leader-box-three">
-                      <div class="leader-box-three-img">
-                        <img src="./image/leader1.png" alt="">
-                        <p>Aytekin Şirinova</p>
+                  <div class="leader-box-five">
+                    <p>453</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slid" id="müellimler">
+          <div class="row g-5 justify-content-center">
+            <div class="col-lg-12">
+              <div class="teacher-head">
+                <h2>Digər Müellimler</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-container swiper">
+            <div class="slider-content">
+              <div class="cardOne-wrapper swiper-wrapper">
+                <div class="cardOne swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="cardOne-image">
+                      <img
+                        src="./image/slider-teacher-1.webp"
+                        alt=""
+                        class="cardOne-img"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="cardOne-content">
+                    <h2>Reyhan Muradova</h2>
+                    <div class="course-about-icons">
+                      <div class="course-icon-box">
+                        <i class="fa-regular fa-clock course-icon"></i>
+                        <span class="course-icon-box-text">22 il</span>
+                      </div>
+                      <div class="course-icon-box">
+                        <i class="fa-regular fa-user course-icon"></i>
+                        <span class="course-icon-box-text">435 Tələbə</span>
+                      </div>
+                      <div class="course-icon-box">
+                        <i class="fa-solid fa-book-open course-icon"></i>
+                        <span class="course-icon-box-text">Riyaziyyat</span>
                       </div>
                     </div>
-                    <div class="leader-box-four">
-                      <p>23 il</p>
+                  </div>
+                </div>
+                <div class="cardOne swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="cardOne-image">
+                      <img
+                        src="./image/slider-teacher-2.webp"
+                        alt=""
+                        class="cardOne-img"
+                      />
                     </div>
-                    <div class="leader-box-five">
-                      <p>453</p>
+                  </div>
+
+                  <div class="cardOne-content">
+                    <h2>Könül Qasımova</h2>
+                    <div class="course-about-icons">
+                      <div class="course-icon-box">
+                        <i class="fa-regular fa-clock course-icon"></i>
+                        <span class="course-icon-box-text">15 il</span>
+                      </div>
+                      <div class="course-icon-box">
+                        <i class="fa-regular fa-user course-icon"></i>
+                        <span class="course-icon-box-text">243 Tələbə</span>
+                      </div>
+                      <div class="course-icon-box">
+                        <i class="fa-solid fa-book-open course-icon"></i>
+
+                        <span class="course-icon-box-text">Kimya</span>
+                      </div>
                     </div>
                   </div>
-                 
                 </div>
-                
-              </div>
-            </div>
-          </section>
-       
-          <section class="slid" id="müellimler">
-            <div class="row g-5 justify-content-center">
-              <div class="col-lg-12">
-                <div class="teacher-head">
-                  <h2>Digər Müellimler</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-              </div>
-            </div>
-  
-      <div class="slider-container swiper">
-        <div class="slider-content">
-          <div class="cardOne-wrapper swiper-wrapper">
-            <div class="cardOne swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-  
-                <div class="cardOne-image">
-                  <img
-                    src="./image/slider-teacher-1.webp"
-                    alt=""
-                    class="cardOne-img"
-                  />
-                </div>
-              </div>
-  
-            <div class="cardOne-content">
-                <h2>Reyhan Muradova</h2>
-                <div class="course-about-icons">
-                  <div class="course-icon-box">
-                    <i class="fa-regular fa-clock course-icon"></i>
-                    <span class="course-icon-box-text">22 il</span>
-                  </div>
-                  <div class="course-icon-box">
-                    <i class="fa-regular fa-user course-icon"></i>
-                    <span class="course-icon-box-text">435 Tələbə</span>
-                  </div>
-                  <div class="course-icon-box">
-                    <i class="fa-solid fa-book-open course-icon"></i>
-                    <span class="course-icon-box-text">Riyaziyyat</span>
-                  </div>
-                </div>
-              
+                <div class="cardOne swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
 
-            </div>
-            </div>
-            <div class="cardOne swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-  
-                <div class="cardOne-image">
-                  <img
-                    src="./image/slider-teacher-2.webp"
-                    alt=""
-                    class="cardOne-img"
-                  />
-                </div>
-              </div>
-  
-              <div class="cardOne-content">
-                <h2>Könül Qasımova</h2>
-                <div class="course-about-icons">
-                  <div class="course-icon-box">
-                    <i class="fa-regular fa-clock course-icon"></i>
-                    <span class="course-icon-box-text">15 il</span>
+                    <div class="cardOne-image">
+                      <img
+                        src="./image/slider-teacher-6.jpeg"
+                        alt=""
+                        class="cardOne-img"
+                      />
+                    </div>
                   </div>
-                  <div class="course-icon-box">
-                    <i class="fa-regular fa-user course-icon"></i>
-                    <span class="course-icon-box-text">243 Tələbə</span>
-                  </div>
-                  <div class="course-icon-box">
-                    <i class="fa-solid fa-book-open course-icon"></i>
 
-                    <span class="course-icon-box-text">Kimya</span>
+                  <div class="cardOne-content">
+                    <h2>Murad Orucov</h2>
+                    <div class="course-about-icons">
+                      <div class="course-icon-box">
+                        <i class="fa-regular fa-clock course-icon"></i>
+                        <span class="course-icon-box-text">10 il</span>
+                      </div>
+                      <div class="course-icon-box">
+                        <i class="fa-regular fa-user course-icon"></i>
+                        <span class="course-icon-box-text">123 Tələbə</span>
+                      </div>
+                      <div class="course-icon-box">
+                        <i class="fa-solid fa-book-open course-icon"></i>
+                        <span class="course-icon-box-text">Fizika</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-  
-               
-              </div>
-            </div>
-            <div class="cardOne swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-  
-                <div class="cardOne-image">
-                  <img
-                    src="./image/slider-teacher-6.jpeg"
-                    alt=""
-                    class="cardOne-img"
-                  />
-                </div>
-              </div>
-  
-              <div class="cardOne-content">
-                <h2>Murad Orucov</h2>
-                <div class="course-about-icons">
-                  <div class="course-icon-box">
-                    <i class="fa-regular fa-clock course-icon"></i>
-                    <span class="course-icon-box-text">10 il</span>
-                  </div>
-                  <div class="course-icon-box">
-                    <i class="fa-regular fa-user course-icon"></i>
-                    <span class="course-icon-box-text">123 Tələbə</span>
-                  </div>
-                  <div class="course-icon-box">
-                    <i class="fa-solid fa-book-open course-icon"></i>
-                    <span class="course-icon-box-text">Fizika</span>
-                  </div>
-                </div>
-  
-              
-              </div>
-            </div>
-            <div class="cardOne swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-  
-                <div class="cardOne-image">
-                  <img
-                    src="./image/slider-teacher-5.webp"
-                    alt=""
-                    class="cardOne-img"
-                  />
-                </div>
-              </div>
-  
-              <div class="cardOne-content">
-                <h2>Elçin Quliyev</h2>
-                <div class="course-about-icons">
-                  <div class="course-icon-box">
-                    <i class="fa-regular fa-clock course-icon"></i>
-                    <span class="course-icon-box-text">21 il</span>
-                  </div>
-                  <div class="course-icon-box">
-                    <i class="fa-regular fa-user course-icon"></i>
-                    <span class="course-icon-box-text">337 Tələbə</span>
-                  </div>
-                  <div class="course-icon-box">
-                    <i class="fa-solid fa-book-open course-icon"></i>
-                    <span class="course-icon-box-text">Riyaziyyat</span>
-                  </div>
-                </div>
-  
-              </div>
-            </div>
-            <div class="cardOne swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-  
-                <div class="cardOne-image">
-                  <img
-                    src="./image/slider-teacher-3.jpeg"
-                    alt=""
-                    class="cardOne-img"
-                  />
-                </div>
-              </div>
-  
-              <div class="cardOne-content">
-                <h2>Aygün Qubadova</h2>
-                <div class="course-about-icons">
-                  <div class="course-icon-box">
-                    <i class="fa-regular fa-clock course-icon"></i>
-                    <span class="course-icon-box-text">18 il</span>
-                  </div>
-                  <div class="course-icon-box">
-                    <i class="fa-regular fa-user course-icon"></i>
-                    <span class="course-icon-box-text">176 Tələbə</span>
-                  </div>
-                  <div class="course-icon-box">
-                    <i class="fa-solid fa-book-open course-icon"></i>
-                    <span class="course-icon-box-text">Tarix</span>
-                  </div>
-                </div>
-  
-                
-              </div>
-            </div>
-            <div class="cardOne swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-  
-                <div class="cardOne-image">
-                  <img
-                    src="./image/slider-teacher-4.webp"
-                    alt=""
-                    class="cardOne-img"
-                  />
-                </div>
-              </div>
-  
-              <div class="cardOne-content">
-                <h2>Günay Kazımlı</h2>
-                <div class="course-about-icons">
-                  <div class="course-icon-box">
-                    <i class="fa-regular fa-clock course-icon"></i>
-                    <span class="course-icon-box-text">14 il</span>
-                  </div>
-                  <div class="course-icon-box">
-                    <i class="fa-regular fa-user course-icon"></i>
-                    <span class="course-icon-box-text">270 Tələbə</span>
-                  </div>
-                  <div class="course-icon-box">
-                    <i class="fa-solid fa-book-open course-icon"></i>
-                    <span class="course-icon-box-text">Fizika</span>
-                  </div>
-                </div>
-  
-                
-              </div>
-            </div>
-           
-           
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-  
-          </section>
+                <div class="cardOne swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
 
-        <section class="cards" id="kurslar">
-          <div class="row">
-            <div class="col-lg-12 mb-5">
-              <div class="cards-head">
-                <h3>Digər kurslar</h3>
-               
+                    <div class="cardOne-image">
+                      <img
+                        src="./image/slider-teacher-5.webp"
+                        alt=""
+                        class="cardOne-img"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="cardOne-content">
+                    <h2>Elçin Quliyev</h2>
+                    <div class="course-about-icons">
+                      <div class="course-icon-box">
+                        <i class="fa-regular fa-clock course-icon"></i>
+                        <span class="course-icon-box-text">21 il</span>
+                      </div>
+                      <div class="course-icon-box">
+                        <i class="fa-regular fa-user course-icon"></i>
+                        <span class="course-icon-box-text">337 Tələbə</span>
+                      </div>
+                      <div class="course-icon-box">
+                        <i class="fa-solid fa-book-open course-icon"></i>
+                        <span class="course-icon-box-text">Riyaziyyat</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardOne swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="cardOne-image">
+                      <img
+                        src="./image/slider-teacher-3.jpeg"
+                        alt=""
+                        class="cardOne-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="cardOne-content">
+                    <h2>Aygün Qubadova</h2>
+                    <div class="course-about-icons">
+                      <div class="course-icon-box">
+                        <i class="fa-regular fa-clock course-icon"></i>
+                        <span class="course-icon-box-text">18 il</span>
+                      </div>
+                      <div class="course-icon-box">
+                        <i class="fa-regular fa-user course-icon"></i>
+                        <span class="course-icon-box-text">176 Tələbə</span>
+                      </div>
+                      <div class="course-icon-box">
+                        <i class="fa-solid fa-book-open course-icon"></i>
+                        <span class="course-icon-box-text">Tarix</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardOne swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="cardOne-image">
+                      <img
+                        src="./image/slider-teacher-4.webp"
+                        alt=""
+                        class="cardOne-img"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="cardOne-content">
+                    <h2>Günay Kazımlı</h2>
+                    <div class="course-about-icons">
+                      <div class="course-icon-box">
+                        <i class="fa-regular fa-clock course-icon"></i>
+                        <span class="course-icon-box-text">14 il</span>
+                      </div>
+                      <div class="course-icon-box">
+                        <i class="fa-regular fa-user course-icon"></i>
+                        <span class="course-icon-box-text">270 Tələbə</span>
+                      </div>
+                      <div class="course-icon-box">
+                        <i class="fa-solid fa-book-open course-icon"></i>
+                        <span class="course-icon-box-text">Fizika</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-              <div class="cardes">
-                <div class="imgBx">
-                  <img src="./image/Rectangle 174 (1).png" alt="" />
-                </div>
-                <div class="content">
-                  <h2>Üstlü və loqarifmik funksiyalar</h2>
-                  <div class="card-icons">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Esse minima similique ad sint enim commodi, quam porro
-                    
-                  </p>
-                  <button class="card-butn">
-                    <a href="./coursetwo.html" class="course-two-btn"
-                      >Ətraflı</a
-                    >
-                  </button>
-                  <span>10azn<sup>ay</sup></span>
-                </div>
-              </div>
-           
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="cardes">
-                <div class="imgBx">
-                  <img src="./image/Rectangle 217.png" alt="" />
-                </div>
-                <div class="content">
-                  <h2>Çoxluqlar</h2>
-                  <div class="card-icons">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Esse minima similique ad sint enim commodi, quam porro
-                    
-                  </p>
-                  <button class="card-butn">Ətraflı</button>
-                  <span>10azn<sup>ay</sup></span>
-                </div>
-              </div>
-            
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="cardes">
-                <div class="imgBx">
-                  <img src="./image/Rectangle 162 (1).png" alt="" />
-                </div>
-                <div class="content">
-                  <h2>Triqonometrik bərabərsizliklər</h2>
-                  <div class="card-icons">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Esse minima similique ad sint enim commodi, quam porro
-                    
-                  </p>
-                  <button class="card-butn">Ətraflı</button>
-                  <span>10azn<sup>ay</sup></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="cardes">
-                <div class="imgBx">
-                  <img src="./image/Rectangle 162 (1).png" alt="" />
-                </div>
-                <div class="content">
-                  <h2>Triqonometrik bərabərsizliklər</h2>
-                  <div class="card-icons">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Esse minima similique ad sint enim commodi, quam porro
-                    
-                  </p>
-                  <div class="card-main-butn">
-                    <button class="card-butn">Ətraflı</button>
-                      <span>10azn<sup>ay</sup></span>
-                </div>
-              </div>
-            
-            </div>
-           
-          </div>
-         
         </section>
       </div>
     </main>
@@ -605,8 +481,8 @@
         <div class="col-lg-2 col-md-4">
           <div class="footer-text">
             <ul>
-              <li><a href="tel:">+994553496060</a></li>
-              <li><a href=""> info@rbacademy.az</a></li>
+              <li><a href="tel:+994553496060">+994553496060</a></li>
+              <li><a href="mailTo:info@rbacademy.az">info@rbacademy.az</a></li>
             </ul>
           </div>
         </div>
@@ -630,8 +506,8 @@
     </section>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <script src="menu.js"></script>
-   <script src="teachslider.js"></script>
+    <script src="./css/js/menu.js"></script>
 
+    <script src="./css/js/teachslider.js"></script>
   </body>
 </html>

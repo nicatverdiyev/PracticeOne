@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
@@ -20,9 +22,10 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/scss/style.css" />
     <!-- <link rel="stylesheet" href="./layout.css" /> -->
-    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./css/scss/responsive.css" />
+    <link rel="stylesheet" href="./css/scss/variables.css" />
     <script
       src="https://kit.fontawesome.com/0766d272ec.js"
       crossorigin="anonymous"
@@ -41,6 +44,10 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
   </head>
   <body style="background: #fafafa">
@@ -78,11 +85,11 @@
               </li>
 
               <li class="nav__item">
-                <a href="#" class="nav__link">Xeberler</a>
+                <a href="./news.html" class="nav__link">Xeberler</a>
               </li>
 
               <li class="nav__item">
-                <a href="#" class="nav__link">Elaqe</a>
+                <a href="./contact.html" class="nav__link">Elaqe</a>
               </li>
             </ul>
 
@@ -187,20 +194,51 @@
                   </button> -->
               <button class="all-but">indi başla</button>
             </div>
-            <!-- <div class="col-lg-2 col-md-6"></div> -->
             <div class="col-lg-6 col-md-6">
-              <div class="imm">
-                <img src="./image/image 8.png" alt="" width="100%" />
+              <div class="video-card">
+                <div class="video-card-body">
+                  <div class="video-thumbnail">
+                    <img src="./image/news3.jpeg" class="thumb-img" alt="" />
+                    <video
+                      src="./video/pexels_videos_1777892 (720p).mp4"
+                      class="thumb-video"
+                      muted
+                      loop
+                    ></video>
+                  </div>
+                  <p
+                    class="video-card-title"
+                    title="A Long And Winding Road Going Up The Mountain Rock Plateau"
+                  >
+                    Kurs haqqında videorolik
+                  </p>
+                  <div class="video-card-info">
+                    <span class="uploaded-time"
+                      ><i class="uil uil-clock"></i> 1 day ago</span
+                    >
+                  </div>
+                </div>
+                <div class="video-modal-screen">
+                  <i class="uil uil-times vid-modal-close-btn"></i>
+                  <div class="video-modal-content">
+                    <video
+                      src="./video/pexels_videos_1777892 (720p).mp4"
+                      class="modal-video"
+                      controls
+                      autoplay
+                      loop
+                    ></video>
+                    <p class="modal-video-title">
+                      Riyaziyyat Bilik Akademiyası
+                    </p>
+                    <div class="modal-video-info">
+                      <span class="uploaded-time"
+                        ><i class="uil uil-clock"></i> 1 day ago</span
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!-- <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/NUNnemylJH0?si=BFdJIv9C8MfUQuIt"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe> -->
             </div>
           </div>
           <!-- </div> -->
@@ -366,8 +404,8 @@
         <div class="col-lg-2 col-md-4">
           <div class="footer-text">
             <ul>
-              <li><a href="tel:">+994553496060</a></li>
-              <li><a href=""> info@rbacademy.az</a></li>
+              <li><a href="tel:+994553496060">+994553496060</a></li>
+              <li><a href="mailTo:info@rbacademy.az"> info@rbacademy.az</a></li>
             </ul>
           </div>
         </div>
@@ -390,6 +428,7 @@
       <div class="row"></div>
     </section>
 
-    <script src="menu.js"></script>
+    <script src="./css/js/menu.js"></script>
+    <script src="./css/js/videopopup.js"></script>
   </body>
 </html>
