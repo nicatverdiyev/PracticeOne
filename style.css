@@ -403,11 +403,16 @@ img {
   background-color: #fff;
 }
 
-.image-content,
-.cardOne-content {
+.image-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px 14px;
+}
+
+.cardOne-content {
+  display: flex;
+  flex-direction: column;
   padding: 10px 14px;
 }
 
@@ -1704,4 +1709,52 @@ html {
   .leader-board {
     display: none;
   }
+}
+#teacher-about {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(190, 190, 190, 0.5);
+}
+
+.teacher-mini-text {
+  color: #543EE9;
+}
+
+#leader-box-two-text {
+  margin-left: 26.3rem;
+}
+
+#leader-box-two-text {
+  margin-right: 22px;
+  color: #FE5538;
+}
+
+.certificates-head {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.certificates {
+  margin-top: 2rem;
+}
+
+#sert {
+  display: block;
+  width: 200px;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.certificates-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+  height: 350px;
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */
