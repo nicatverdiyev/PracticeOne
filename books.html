@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
+      integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- .......... -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="./layout.css" /> -->
+    <link rel="stylesheet" href="./reset.css" />
+    <script
+      src="https://kit.fontawesome.com/0766d272ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- .......... -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body style="background: #fafafa">
+    <main>
+      <header class="header" id="header">
+        <nav class="nav1">
+          <a href="./index.html" class="nav__logo"
+            ><img src="./image/image 7.png" alt=""
+          /></a>
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./about.html" class="nav__link">Haqqımızda</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./courses.html" class="nav__link">Kurslar</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./graduates.html" class="nav__link">Məzunlar</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./teachers.html" class="nav__link">Müellimler</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./certificates.html" class="nav__link">Sertfikatlar</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">Kitablar</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">Xeberler</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">Elaqe</a>
+              </li>
+            </ul>
+
+            <!-- close button -->
+            <div class="nav__close" id="nav-close">
+              <i class="ri-close-line"></i>
+            </div>
+          </div>
+
+          <div class="nav__actions">
+            <!-- search button -->
+            <i class="ri-search-line nav__search" id="search-btn"></i>
+
+            <!-- login button -->
+            <i class="ri-user-line nav__login" id="login-btn"></i>
+
+            <!-- toogle button -->
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="search" id="search">
+        <form action="" class="search__form">
+          <i class="ri-search-line search__icon"></i>
+          <input
+            type="search"
+            placeholder="What are you looking for?"
+            class="search__input"
+          />
+        </form>
+        <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+      <div class="miniPage">
+        <p class="miniPageTextOne">Ana sehife</p>
+        <i
+          class="fa-solid fa-circle fa-2xs"
+          style="color: #1eff00; font-size: 7px"
+        ></i>
+        <span class="miniPageTextTwo">Kitablar</span>
+      </div>
+
+      <div class="login" id="login">
+        <form action="" class="login__form">
+          <h2 class="login__title">Log In</h2>
+
+          <div class="login__group">
+            <div>
+              <label for="email" class="login__label">Email</label>
+              <input
+                type="email"
+                placeholder="Email ünvanınızı yazın"
+                class="login__input"
+                id="email"
+              />
+            </div>
+            <div>
+              <label for="password" class="login__label">Password</label>
+              <input
+                type="password"
+                placeholder="Parolunuzu yazın"
+                class="login__input"
+                id="password"
+              />
+            </div>
+          </div>
+
+          <div>
+            <p class="login__sigup">
+              Profiliniz yoxdur? <a href="#">Sign up</a>
+            </p>
+
+            <a href="#" class="login__forgot"> Siz parolunuzu unutmusuz? </a>
+
+            <button type="submit" class="login__button">Log in</button>
+          </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+      <div class="container">
+        <section class="booxx" id="kitablar">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="book-head">
+                <h3>Kitablar</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Necessitatibus quaerat vel at blanditiis sequi id quisquam
+                  <br />repudiandae nemo suscipit quam fugit odio, expedita
+                  provident reiciendis velit ea? Saepe, officiis illum?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="products">
+                <div class="products-cards">
+                  <h2 class="names">Riyaziyyat</h2>
+                  <span class="price">₼10</span>
+                  <a class="popup-btn">Ətraflı</a>
+                  <img src="./image/n1(1).png" class="product-img" alt="" />
+                </div>
+                <div class="popup-view">
+                  <div class="popup-card">
+                    <a><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                      <img src="./image/n1(1).png" alt="" />
+                    </div>
+                    <div class="info">
+                      <h2>Riyaziyyat<br /><span>5-ci sinif</span></h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </p>
+                      <span class="price">₼10</span>
+                      <a href="#" class="add-cart-btn">Əlave et</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="products">
+                <div class="products-cards">
+                  <h2 class="names">Fizika</h2>
+                  <span class="price">₼15</span>
+                  <a class="popup-btn">Ətraflı</a>
+                  <img
+                    src="./image/fizika 11.jpeg"
+                    class="product-img"
+                    alt=""
+                  />
+                </div>
+                <div class="popup-view">
+                  <div class="popup-card">
+                    <a><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                      <img src="./image/fizika 11.jpeg" alt="" />
+                    </div>
+                    <div class="info">
+                      <h2>Fizika<br /><span>11-ci sinif</span></h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </p>
+                      <span class="price">₼15</span>
+                      <a href="#" class="add-cart-btn">Əlave et</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="products">
+                <div class="products-cards">
+                  <h2 class="names">Riyaziyyat</h2>
+                  <span class="price">₼20</span>
+                  <a class="popup-btn">Ətraflı</a>
+                  <img
+                    src="./image/riyaziyyat.jpeg"
+                    class="product-img"
+                    alt=""
+                  />
+                </div>
+                <div class="popup-view">
+                  <div class="popup-card">
+                    <a><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                      <img src="./image/riyaziyyat.jpeg" alt="" />
+                    </div>
+                    <div class="info">
+                      <h2>Riyaziyyat<br /><span>10-ci sinif</span></h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </p>
+                      <span class="price">₼20</span>
+                      <a href="#" class="add-cart-btn">Əlavə et</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="products">
+                <div class="products-cards">
+                  <h2 class="names">Fizika</h2>
+                  <span class="price">₼25</span>
+                  <a class="popup-btn">Ətraflı</a>
+                  <img src="./image/fizika.jpeg" class="product-img" alt="" />
+                </div>
+                <div class="popup-view">
+                  <div class="popup-card">
+                    <a><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                      <img src="./image/fizika.jpeg" alt="" />
+                    </div>
+                    <div class="info">
+                      <h2>Fizika<br /><span>10-ci sinif</span></h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </p>
+                      <span class="price">₼25</span>
+                      <a href="#" class="add-cart-btn">Əlavə et</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="products">
+                <div class="products-cards">
+                  <h2 class="names">Kimya</h2>
+                  <span class="price">₼14</span>
+                  <a class="popup-btn">Ətraflı</a>
+                  <img src="./image/kimya.jpeg" class="product-img" alt="" />
+                </div>
+                <div class="popup-view">
+                  <div class="popup-card">
+                    <a><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                      <img src="./image/kimya.jpeg" alt="" />
+                    </div>
+                    <div class="info">
+                      <h2>Kimya<br /><span>10-ci sinif</span></h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </p>
+                      <span class="price">₼14</span>
+                      <a href="#" class="add-cart-btn">Əlavə et</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="products">
+                <div class="products-cards">
+                  <h2 class="names">Tarix</h2>
+                  <span class="price">₼23</span>
+                  <a class="popup-btn">Ətraflı</a>
+                  <img src="./image/tarix.jpeg" class="product-img" alt="" />
+                </div>
+                <div class="popup-view">
+                  <div class="popup-card">
+                    <a><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                      <img src="./image/tarix.jpeg" alt="" />
+                    </div>
+                    <div class="info">
+                      <h2>Tarix<br /><span>10-ci sinif</span></h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </p>
+                      <span class="price">₼23</span>
+                      <a href="#" class="add-cart-btn">Əlavə et</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <section class="main-footer" id="elaqe">
+      <div class="row">
+        <div class="col-lg-2 col-md-12">
+          <div class="footer-image">
+            <img src="./image/footer.png" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="footer-text">
+            <ul>
+              <li><a href="./about.html"> Haqqımızda </a></li>
+              <li><a href="#müellimler">Müellimler</a></li>
+              <li><a href="#xeberler">Xeberler</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="footer-text">
+            <ul>
+              <li><a href="#sertfikatlar">Sertfikatlar</a></li>
+              <li><a href="./graduates.html">Məzunlar</a></li>
+              <li><a href="./courses.html">Kurslar</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="footer-text">
+            <ul>
+              <li><a href="#kurslar">Riyaziyyat</a></li>
+              <li><a href="#kurslar">MQ Riyaziyyat</a></li>
+              <li><a href="#kurslar">Kimya</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="footer-text">
+            <ul>
+              <li><a href="tel:">+994553496060</a></li>
+              <li><a href=""> info@rbacademy.az</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="footer-icons">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row"></div>
+    </section>
+
+    <script src="bookpopup.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
