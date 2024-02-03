@@ -5,6 +5,11 @@ const navMenu = document.getElementById('nav-menu'),
     navClose = document.getElementById('nav-close')
 
 // Menu açılır
+
+// navToogle.addEventListener("click",() => {
+//     navMenu.classList.toggle('show-menu')
+// })
+
 navToogle.addEventListener('click', () => {
     navMenu.classList.add('show-menu')
 })

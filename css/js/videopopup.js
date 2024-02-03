@@ -1,5 +1,5 @@
 
-//Javascript for play & pause video card thumbnails on mouseover/mouseleave
+//cursor üzerinde olanda ve tıklayanda videonun oynadılması
 const video_thumbs = document.querySelectorAll(".thumb-video");
 
 video_thumbs.forEach((video_thumb) => {
@@ -17,14 +17,14 @@ video_thumbs.forEach((video_thumb) => {
   });
 });
 
-//Jquery for go through each long title to short it with "..."
+//Ölçünün böyümesi
 $(".video-card-title").each(function () {
   if ($(this).text().length > 50) {
     $(this).html($(this).text().substring(0, 55) + "...");
   }
 });
 
-//Javascript for popup video modal screens on click the cards
+//Clicl ederken kartın açılması
 const video_modalScreens = document.querySelectorAll(
   ".video-modal-screen"
 );
@@ -41,7 +41,7 @@ video_cards.forEach((video_card, i) => {
   });
 });
 
-//Javascript for modal close buttons
+//BAĞLAMA iconu
 modal_closeBtns.forEach((modal_closeBtn) => {
   modal_closeBtn.addEventListener("click", () => {
     video_modalScreens.forEach((video_modalScreen) => {
